@@ -1,6 +1,5 @@
 -module(controller_auth).
 -author("ramy.daghstani@gmail.com").
--compile([native]).
 -export([init/3, default/3]).
 
 -include("/usr/lib/yaws/include/yaws_api.hrl").
