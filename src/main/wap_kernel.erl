@@ -14,9 +14,7 @@ start(normal, []) ->
 
 init() -> 
 	inets:start(),
-	code:add_pathz("/home/ramy/erlang/ecouch/ecouch-read-only/ebin/"),
 	code:add_pathz("/usr/lib/yaws/ebin/"),
-	application:start(ecouch),
 	Docroot = "/var/yaws",
 	Id = "my_server",
 	ServerConfiguration = [{servername, "localhostserver"}, {listen, {127,0,0,1}}, {port, 8000}, {appmods, [{"/", wap_kernel}]}],
