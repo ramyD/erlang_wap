@@ -1,1 +1,1 @@
-{"src/*/*", ['+native', smp, {outdir, "ebin"}]}.
+{"src/*/*", ['+native', smp, {outdir, "ebin"}, {i, "include"}]}.

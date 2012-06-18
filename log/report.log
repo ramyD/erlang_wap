@@ -627,3 +627,841 @@ Stack: [{wap_kernel,out,1},{controller_priv,init,3}]
 =ERROR REPORT==== 12-May-2012::00:12:39 ===
 yaws code at appmod:0 crashed or ret bad val:{} 
 Req: {http_request,'POST',{abs_path,"/auth/register"},{1,1}}
+=INFO REPORT==== 16-Jun-2012::13:19:13 ===
+<HiPE (v 3.8.1)> WARNING: Module router was compiled with HiPE version 3.7.9
+
+=INFO REPORT==== 16-Jun-2012::13:19:13 ===
+<HiPE (v 3.8.1)> WARNING: Module controller_default was compiled with HiPE version 3.7.9
+
+=ERROR REPORT==== 16-Jun-2012::13:50:36 ===
+Error in process <0.84.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 16-Jun-2012::18:13:09 ===
+Error in process <0.126.0> with exit value: {badarg,[{erlang,tl,[get]},{inets_regexp,first_match,3},{inets_regexp,first_match,2},{http_uri,split_uri,5},{http_uri,parse_scheme,1},{http_uri,parse,1},{httpc,request,5},{controller_auth,authenticate,3}]}
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 108 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 99 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 116 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 47 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 106 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 115 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:27 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 108 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 99 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 116 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 47 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 106 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 115 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:48 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 108 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 99 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 116 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 47 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 106 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 115 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:17:53 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 108 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 99 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 116 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 47 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 106 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 115 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:30 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 108 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 99 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 116 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 47 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 106 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 115 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:33 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 108 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 99 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 116 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 47 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 106 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 115 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:34 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 108 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 99 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 116 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 47 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 106 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 115 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:36 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 108 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 99 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 116 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 47 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 106 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 115 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:18:41 ===
+Invalid option 110 ignored 
+
+
+=ERROR REPORT==== 16-Jun-2012::18:20:57 ===
+Error in process <0.168.0> with exit value: {badarg,[{erlang,tl,[get]},{inets_regexp,first_match,3},{inets_regexp,first_match,2},{http_uri,split_uri,5},{http_uri,parse_scheme,1},{http_uri,parse,1},{httpc,request,5},{controller_auth,authenticate,3}]}
+
+
+=ERROR REPORT==== 16-Jun-2012::18:21:02 ===
+Error in process <0.170.0> with exit value: {badarg,[{erlang,tl,[get]},{inets_regexp,first_match,3},{inets_regexp,first_match,2},{http_uri,split_uri,5},{http_uri,parse_scheme,1},{http_uri,parse,1},{httpc,request,5},{controller_auth,authenticate,3}]}
+
+
+=ERROR REPORT==== 16-Jun-2012::18:21:41 ===
+Error in process <0.69.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 16-Jun-2012::18:21:42 ===
+Error in process <0.71.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 16-Jun-2012::18:21:51 ===
+Error in process <0.72.0> with exit value: {badarg,[{erlang,tl,[get]},{inets_regexp,first_match,3},{inets_regexp,first_match,2},{http_uri,split_uri,5},{http_uri,parse_scheme,1},{http_uri,parse,1},{httpc,request,5},{controller_auth,authenticate,3}]}
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 112 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 108 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 99 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 97 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 116 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 105 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 110 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 47 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 106 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 115 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 111 ignored 
+
+
+=INFO REPORT==== 16-Jun-2012::18:24:20 ===
+Invalid option 110 ignored 
+
+
+=ERROR REPORT==== 16-Jun-2012::18:32:24 ===
+Error in process <0.69.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 16-Jun-2012::18:32:26 ===
+Error in process <0.71.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::00:12:18 ===
+Error in process <0.70.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::00:12:20 ===
+Error in process <0.72.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::00:12:21 ===
+Error in process <0.74.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::01:34:16 ===
+Error in process <0.69.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::01:34:28 ===
+Error in process <0.70.0> with exit value: {{badmatch,{error,{function_clause,[{rfc4627,parse_number,[{ok,{obj,[{"total_rows",1},{"offset",0},{"rows",[{obj,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<32 bytes>>}]}]}]},[]},[]]},{rfc4627,decode_noauto,1},{controller_auth,authenticate,3},{controller_auth,init... 
+
+
+=ERROR REPORT==== 17-Jun-2012::01:40:22 ===
+Error in process <0.68.0> with exit value: {{badmatch,{error,{function_clause,[{rfc4627,parse_number,[{ok,{obj,[{"total_rows",1},{"offset",0},{"rows",[{obj,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<32 bytes>>}]}]}]},[]},[]]},{rfc4627,decode_noauto,1},{controller_auth,authenticate,3},{controller_auth,init... 
+
+
+=ERROR REPORT==== 17-Jun-2012::01:41:23 ===
+Error in process <0.68.0> with exit value: {{badmatch,{error,{function_clause,[{rfc4627,parse_number,[{ok,{obj,[{"total_rows",1},{"offset",0},{"rows",[{obj,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<32 bytes>>}]}]}]},[]},[]]},{rfc4627,decode_noauto,1},{controller_auth,authenticate,3},{controller_auth,init... 
+
+
+=ERROR REPORT==== 17-Jun-2012::01:42:50 ===
+Error in process <0.69.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::13:50:06 ===
+Error in process <0.71.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::14:20:57 ===
+Error in process <0.69.0> with exit value: {{badmatch,{error,{function_clause,[{rfc4627,parse_number,[{ok,{obj,[{"total_rows",1},{"offset",0},{"rows",[{obj,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<32 bytes>>}]}]}]},[]},[]]},{rfc4627,decode_noauto,1},{controller_auth,authenticate,3},{controller_auth,init... 
+
+
+=ERROR REPORT==== 17-Jun-2012::14:41:52 ===
+Error in process <0.69.0> with exit value: {function_clause,[{controller_auth,'-authenticate/3-lc$^1/1-1-',[true,[],"Ramy Daghstani"]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::14:45:41 ===
+Error in process <0.69.0> with exit value: {function_clause,[{controller_auth,'-authenticate/3-lc$^1/1-1-',[true,[],"Ramy Daghstani"]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::14:45:44 ===
+Error in process <0.73.0> with exit value: {function_clause,[{controller_auth,'-authenticate/3-lc$^1/1-1-',[true,[],"Ramy Daghstani"]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::14:54:19 ===
+Error in process <0.69.0> with exit value: {{badmatch,[{obj,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<32 bytes>>}]}]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::14:59:24 ===
+Error in process <0.69.0> with exit value: {function_clause,[{controller_auth,'-authenticate/3-lc$^1/1-1-',[false,[],"Ramy Daghstani"]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::15:23:24 ===
+Error in process <0.75.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::15:36:16 ===
+Error in process <0.70.0> with exit value: {{badmatch,[]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::15:36:32 ===
+Error in process <0.74.0> with exit value: {{badmatch,[]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::16:15:10 ===
+Error in process <0.69.0> with exit value: {{badmatch,[]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::16:15:10 ===
+Error in process <0.73.0> with exit value: {{badmatch,[]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::20:37:13 ===
+ERROR: Can't parse post body for 'GET' requests: URL: "/var/yaws/auth/authenticate"
+=ERROR REPORT==== 17-Jun-2012::20:37:13 ===
+Error in process <0.69.0> with exit value: {{badmatch,[]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::20:37:16 ===
+Error in process <0.71.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::20:51:23 ===
+Error in process <0.69.0> with exit value: {{case_clause,{"key",<<14 bytes>>}},[{controller_auth,'-authenticate/3-lc$^0/1-0-',2},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::20:55:46 ===
+Error in process <0.69.0> with exit value: {{case_clause,{"key",<<14 bytes>>}},[{controller_auth,'-authenticate/3-lc$^0/1-0-',2},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::20:58:58 ===
+Error in process <0.23.0> with exit value: {function_clause,[{user_drv,get_line,[{expand,"pa\"(dc",[],{line," --> ",{"pa\"(dc",[]},none},[]},#Port<0.418>,#Port<0.418>]},{user_drv,switch_loop,3},{user_drv,handle_escape,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::20:58:58 ===
+** Generic server <0.22.0> terminating 
+** Last message in was {'EXIT',<0.24.0>,
+                        {function_clause,
+                         [{user_drv,get_line,
+                           [{expand,"pa\"(dc",[],
+                             {line," --> ",{"pa\"(dc",[]},none},
+                             []},
+                            #Port<0.418>,#Port<0.418>]},
+                          {user_drv,switch_loop,3},
+                          {user_drv,handle_escape,4}]}}
+** When Server state == {state,user_sup,undefined,<0.24.0>,
+                               {<0.22.0>,user_sup}}
+** Reason for termination == 
+** {function_clause,
+       [{user_drv,get_line,
+            [{expand,"pa\"(dc",[],{line," --> ",{"pa\"(dc",[]},none},[]},
+             #Port<0.418>,#Port<0.418>]},
+        {user_drv,switch_loop,3},
+        {user_drv,handle_escape,4}]}
+
+=ERROR REPORT==== 17-Jun-2012::20:58:58 ===
+** gen_event handler error_logger_tty_h crashed.
+** Was installed in error_logger
+** Last event was: {error,<0.8.0>,
+                          {emulator,"~s~n",
+                                    ["Error in process <0.23.0> with exit value: {function_clause,[{user_drv,get_line,[{expand,\"pa\\\"(dc\",[],{line,\" --> \",{\"pa\\\"(dc\",[]},none},[]},#Port<0.418>,#Port<0.418>]},{user_drv,switch_loop,3},{user_drv,handle_escape,4}]}\n"]}}
+** When handler state == {<0.24.0>,error_logger}
+** Reason == {badarg,[{io,format,
+                          [user,
+                           ["\n",61,"ERROR REPORT",61,61,61,61,32,"17",45,
+                            "Jun",45,"2012",58,58,"20",58,"58",58,"58",32,61,
+                            61,61,"\n",
+                            "Error in process <0.23.0> with exit value: {function_clause,[{user_drv,get_line,[{expand,\"pa\\\"(dc\",[],{line,\" --> \",{\"pa\\\"(dc\",[]},none},[]},#Port<0.418>,#Port<0.418>]},{user_drv,switch_loop,3},{user_drv,handle_escape,4}]}\n",
+                            "\n"],
+                           []]},
+                      {error_logger_tty_h,handle_event,2},
+                      {gen_event,server_update,4},
+                      {gen_event,server_notify,4},
+                      {gen_event,server_notify,4},
+                      {gen_event,handle_msg,5},
+                      {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 17-Jun-2012::21:00:16 ===
+Error in process <0.71.0> with exit value: {function_clause,[{controller_auth,'-authenticate/3-lc$^1/1-1-',[{"key",<<14 bytes>>},[],"Ramy Daghstani",[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<32 bytes>>}]]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::21:09:51 ===
+Error in process <0.124.0> with exit value: {{badmatch,[]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::21:16:51 ===
+Error in process <0.127.0> with exit value: {{badmatch,[]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::21:16:53 ===
+Error in process <0.130.0> with exit value: {{badmatch,[]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::21:17:02 ===
+Error in process <0.136.0> with exit value: {{badmatch,[]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::21:52:53 ===
+Error in process <0.233.0> with exit value: {{badmatch,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",1234}]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::21:53:03 ===
+Error in process <0.236.0> with exit value: {{badmatch,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",1234}]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::21:53:30 ===
+Error in process <0.243.0> with exit value: {{badmatch,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",1234}]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::21:54:04 ===
+Error in process <0.250.0> with exit value: {{badmatch,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",1234}]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::22:03:21 ===
+Error in process <0.324.0> with exit value: {{badmatch,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<4 bytes>>}]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::22:03:38 ===
+Error in process <0.333.0> with exit value: {{badmatch,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<4 bytes>>}]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::22:04:02 ===
+Error in process <0.340.0> with exit value: {{badmatch,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<4 bytes>>}]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::22:05:06 ===
+Error in process <0.354.0> with exit value: {badarg,[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::22:05:44 ===
+Error in process <0.356.0> with exit value: {badarg,[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::23:44:54 ===
+Error in process <0.69.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 17-Jun-2012::23:51:20 ===
+Error in process <0.114.0> with exit value: {{badmatch,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<4 bytes>>}]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::02:20:57 ===
+Error in process <0.161.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::02:21:52 ===
+Error in process <0.164.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::02:22:46 ===
+Error in process <0.180.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
