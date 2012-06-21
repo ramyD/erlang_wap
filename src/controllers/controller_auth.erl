@@ -22,7 +22,6 @@ default(Kernel, _ExtraParameters, _A) ->
 
 login(Kernel, _ExtraParameters, A) ->
   CD = lib_cookie:getcookiedata(A),
-  io:format("CD: ~p", [CD#cookiedata.permission]),
   case CD#cookiedata.permission of
     anonymous -> Kernel ! {ok, view_login:out(A)};
     _ -> Kernel ! {ok, view_loggedin:out(A, [{name, CD#cookiedata.first_name ++ " " ++ CD#cookiedata.last_name}])}
