@@ -16,7 +16,6 @@ init(Kernel, Parameters, A) ->
 		error:undef -> init(Kernel, "", A)
 	end.
 
-default(Kernel, ExtraParameters, _A) ->
-	Kernel ! {ok, {ehtml, [{section, [], ["this is the chat room"]}]}},
+default(Kernel, _ExtraParameters, A) ->
+	Kernel ! {ok, view_chat:out(A)},
 	ok.
-
