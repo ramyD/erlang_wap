@@ -13,8 +13,8 @@ get_passwords() ->
 get_user(UserId) ->
   {ok, {{"HTTP/1.1",200,"OK"}, _, DbRawRows}} = httpc:request(get, {"http://localhost:5984/cadets/" ++ UserId, [{"Content-Type", rfc4627:mime_type()}]}, [], [{full_result, true}]),
   DbRowObjects = rfc4627:decode_noauto(DbRawRows),
-  {ok, {obj,[{"total_rows",1}, {"offset",0}, {"rows", Rows}]}, []} = DbRowObjects,
-  Rows.
+  {ok, {obj, Row}, []} = DbRowObjects,
+  Row.
 
 add() -> ok.
 

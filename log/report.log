@@ -1665,3 +1665,187 @@ Error in process <0.145.0> with exit value: {badarg,[{erlang,'++',[{error,bad_na
 =ERROR REPORT==== 18-Jun-2012::21:39:15 ===
 Error in process <0.153.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
 
+
+=ERROR REPORT==== 20-Jun-2012::22:39:10 ===
+Error in process <0.69.0> with exit value: {function_clause,[{controller_auth,login,[<0.63.0>,[],{arg,#Port<0.2137>,{{127,0,0,1},36826},{headers,"keep-alive","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","127.0.0.1:8000",undefined,undefined,undefined,undefined,undefined... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:39:11 ===
+Error in process <0.70.0> with exit value: {function_clause,[{controller_auth,login,[<0.68.0>,[],{arg,#Port<0.2324>,{{127,0,0,1},36827},{headers,"keep-alive","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","127.0.0.1:8000",undefined,undefined,undefined,undefined,undefined... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:39:42 ===
+Error in process <0.75.0> with exit value: {function_clause,[{controller_auth,login,[<0.68.0>,[],{arg,#Port<0.2324>,{{127,0,0,1},36827},{headers,"keep-alive","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","127.0.0.1:8000",undefined,undefined,undefined,undefined,undefined... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:40:38 ===
+Error in process <0.86.0> with exit value: {function_clause,[{controller_auth,login,[<0.63.0>,[],{arg,#Port<0.3887>,{{127,0,0,1},36831},{headers,"keep-alive","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","127.0.0.1:8000",undefined,undefined,undefined,undefined,undefined... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:40:47 ===
+Error in process <0.105.0> with exit value: {function_clause,[{controller_auth,login,[<0.85.0>,[],{arg,#Port<0.3906>,{{127,0,0,1},36832},{headers,"keep-alive","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","127.0.0.1:8000",undefined,undefined,undefined,undefined,undefined... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:40:48 ===
+Error in process <0.106.0> with exit value: {function_clause,[{controller_auth,login,[<0.63.0>,[],{arg,#Port<0.3908>,{{127,0,0,1},36833},{headers,"keep-alive","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","127.0.0.1:8000",undefined,undefined,undefined,undefined,undefined... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:41:39 ===
+Error in process <0.116.0> with exit value: {function_clause,[{controller_auth,login,[<0.85.0>,[],{arg,#Port<0.3918>,{{127,0,0,1},36834},{headers,"keep-alive","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","127.0.0.1:8000",undefined,undefined,undefined,undefined,undefined... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:41:50 ===
+Error in process <0.127.0> with exit value: {function_clause,[{controller_auth,login,[<0.85.0>,[],{arg,#Port<0.3918>,{{127,0,0,1},36834},{headers,"keep-alive","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","127.0.0.1:8000",undefined,undefined,undefined,undefined,undefined... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:43:05 ===
+Error in process <0.137.0> with exit value: {function_clause,[{controller_auth,login,[<0.117.0>,[],{arg,#Port<0.3937>,{{127,0,0,1},36839},{headers,"keep-alive","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","127.0.0.1:8000",undefined,undefined,undefined,undefined,undefined... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:43:13 ===
+Error in process <0.157.0> with exit value: {function_clause,[{controller_auth,login,[<0.138.0>,[],{arg,#Port<0.3956>,{{127,0,0,1},36840},{headers,"keep-alive","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","127.0.0.1:8000",undefined,undefined,undefined,undefined,undefined... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:45:02 ===
+Error in process <0.184.0> with exit value: {function_clause,[{controller_auth,login,[<0.117.0>,[],{arg,#Port<0.3980>,{{127,0,0,1},36842},{headers,"keep-alive","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","127.0.0.1:8000",undefined,undefined,undefined,undefined,undefined... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:45:03 ===
+Error in process <0.186.0> with exit value: {function_clause,[{controller_auth,login,[<0.117.0>,[],{arg,#Port<0.3980>,{{127,0,0,1},36842},{headers,"keep-alive","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","127.0.0.1:8000",undefined,undefined,undefined,undefined,undefined... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:45:57 ===
+Error in process <0.220.0> with exit value: {{badmatch,{ok,{obj,[{"_id",<<32 bytes>>},{"_rev",<<35 bytes>>},{"first_name",<<4 bytes>>},{"middle_name",null},{"last_name",<<9 bytes>>},{"date_of_birth",<<10 bytes>>},{"address",[{obj,[{"address_line_1",<<23 bytes>>}]},{obj,[{"address_line_2",<<3 bytes>>}]},{obj,[{"postal_code",<<7 bytes>>}]},{obj,[{"phone_number",<<12 bytes>>}]}]},{"parent",[null... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:46:03 ===
+Error in process <0.224.0> with exit value: {{badmatch,{ok,{obj,[{"_id",<<32 bytes>>},{"_rev",<<35 bytes>>},{"first_name",<<4 bytes>>},{"middle_name",null},{"last_name",<<9 bytes>>},{"date_of_birth",<<10 bytes>>},{"address",[{obj,[{"address_line_1",<<23 bytes>>}]},{obj,[{"address_line_2",<<3 bytes>>}]},{obj,[{"postal_code",<<7 bytes>>}]},{obj,[{"phone_number",<<12 bytes>>}]}]},{"parent",[null... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:46:32 ===
+Error in process <0.234.0> with exit value: {{badmatch,{ok,{obj,[{"_id",<<32 bytes>>},{"_rev",<<35 bytes>>},{"first_name",<<4 bytes>>},{"middle_name",null},{"last_name",<<9 bytes>>},{"date_of_birth",<<10 bytes>>},{"address",[{obj,[{"address_line_1",<<23 bytes>>}]},{obj,[{"address_line_2",<<3 bytes>>}]},{obj,[{"postal_code",<<7 bytes>>}]},{obj,[{"phone_number",<<12 bytes>>}]}]},{"parent",[null... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:46:54 ===
+Error in process <0.244.0> with exit value: {{badmatch,{ok,{obj,[{"_id",<<32 bytes>>},{"_rev",<<35 bytes>>},{"first_name",<<4 bytes>>},{"middle_name",null},{"last_name",<<9 bytes>>},{"date_of_birth",<<10 bytes>>},{"address",[{obj,[{"address_line_1",<<23 bytes>>}]},{obj,[{"address_line_2",<<3 bytes>>}]},{obj,[{"postal_code",<<7 bytes>>}]},{obj,[{"phone_number",<<12 bytes>>}]}]},{"parent",[null... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:47:09 ===
+Error in process <0.254.0> with exit value: {{badmatch,{ok,{obj,[{"_id",<<32 bytes>>},{"_rev",<<35 bytes>>},{"first_name",<<4 bytes>>},{"middle_name",null},{"last_name",<<9 bytes>>},{"date_of_birth",<<10 bytes>>},{"address",[{obj,[{"address_line_1",<<23 bytes>>}]},{obj,[{"address_line_2",<<3 bytes>>}]},{obj,[{"postal_code",<<7 bytes>>}]},{obj,[{"phone_number",<<12 bytes>>}]}]},{"parent",[null... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:47:40 ===
+Error in process <0.264.0> with exit value: {{badmatch,{ok,{obj,[{"_id",<<32 bytes>>},{"_rev",<<35 bytes>>},{"first_name",<<4 bytes>>},{"middle_name",null},{"last_name",<<9 bytes>>},{"date_of_birth",<<10 bytes>>},{"address",[{obj,[{"address_line_1",<<23 bytes>>}]},{obj,[{"address_line_2",<<3 bytes>>}]},{obj,[{"postal_code",<<7 bytes>>}]},{obj,[{"phone_number",<<12 bytes>>}]}]},{"parent",[null... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:48:49 ===
+Error in process <0.280.0> with exit value: {{badmatch,{ok,{obj,[{"_id",<<32 bytes>>},{"_rev",<<35 bytes>>},{"first_name",<<4 bytes>>},{"middle_name",null},{"last_name",<<9 bytes>>},{"date_of_birth",<<10 bytes>>},{"address",[{obj,[{"address_line_1",<<23 bytes>>}]},{obj,[{"address_line_2",<<3 bytes>>}]},{obj,[{"postal_code",<<7 bytes>>}]},{obj,[{"phone_number",<<12 bytes>>}]}]},{"parent",[null... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:53:10 ===
+Error in process <0.292.0> with exit value: {{badmatch,{ok,{obj,[{"_id",<<32 bytes>>},{"_rev",<<35 bytes>>},{"first_name",<<4 bytes>>},{"middle_name",null},{"last_name",<<9 bytes>>},{"date_of_birth",<<10 bytes>>},{"address",[{obj,[{"address_line_1",<<23 bytes>>}]},{obj,[{"address_line_2",<<3 bytes>>}]},{obj,[{"postal_code",<<7 bytes>>}]},{obj,[{"phone_number",<<12 bytes>>}]}]},{"parent",[null... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:53:41 ===
+Error in process <0.300.0> with exit value: {{badmatch,{ok,{obj,[{"_id",<<32 bytes>>},{"_rev",<<35 bytes>>},{"first_name",<<4 bytes>>},{"middle_name",null},{"last_name",<<9 bytes>>},{"date_of_birth",<<10 bytes>>},{"address",[{obj,[{"address_line_1",<<23 bytes>>}]},{obj,[{"address_line_2",<<3 bytes>>}]},{obj,[{"postal_code",<<7 bytes>>}]},{obj,[{"phone_number",<<12 bytes>>}]}]},{"parent",[null... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:55:39 ===
+Error in process <0.316.0> with exit value: {{badmatch,{ok,{obj,[{"_id",<<32 bytes>>},{"_rev",<<35 bytes>>},{"first_name",<<4 bytes>>},{"middle_name",null},{"last_name",<<9 bytes>>},{"date_of_birth",<<10 bytes>>},{"address",[{obj,[{"address_line_1",<<23 bytes>>}]},{obj,[{"address_line_2",<<3 bytes>>}]},{obj,[{"postal_code",<<7 bytes>>}]},{obj,[{"phone_number",<<12 bytes>>}]}]},{"parent",[null... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:55:55 ===
+Error in process <0.328.0> with exit value: {{badmatch,{ok,{obj,[{"_id",<<32 bytes>>},{"_rev",<<35 bytes>>},{"first_name",<<4 bytes>>},{"middle_name",null},{"last_name",<<9 bytes>>},{"date_of_birth",<<10 bytes>>},{"address",[{obj,[{"address_line_1",<<23 bytes>>}]},{obj,[{"address_line_2",<<3 bytes>>}]},{obj,[{"postal_code",<<7 bytes>>}]},{obj,[{"phone_number",<<12 bytes>>}]}]},{"parent",[null... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:56:25 ===
+Error in process <0.348.0> with exit value: {{badmatch,{ok,{obj,[{"_id",<<32 bytes>>},{"_rev",<<35 bytes>>},{"first_name",<<4 bytes>>},{"middle_name",null},{"last_name",<<9 bytes>>},{"date_of_birth",<<10 bytes>>},{"address",[{obj,[{"address_line_1",<<23 bytes>>}]},{obj,[{"address_line_2",<<3 bytes>>}]},{obj,[{"postal_code",<<7 bytes>>}]},{obj,[{"phone_number",<<12 bytes>>}]}]},{"parent",[null... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:56:40 ===
+Error in process <0.355.0> with exit value: {{badmatch,{ok,{obj,[{"_id",<<32 bytes>>},{"_rev",<<35 bytes>>},{"first_name",<<4 bytes>>},{"middle_name",null},{"last_name",<<9 bytes>>},{"date_of_birth",<<10 bytes>>},{"address",[{obj,[{"address_line_1",<<23 bytes>>}]},{obj,[{"address_line_2",<<3 bytes>>}]},{obj,[{"postal_code",<<7 bytes>>}]},{obj,[{"phone_number",<<12 bytes>>}]}]},{"parent",[null... 
+
+
+=ERROR REPORT==== 20-Jun-2012::22:57:17 ===
+Error in process <0.361.0> with exit value: {badarg,[{erlang,binary_to_list,["7ea89e52487d6e88f96ba4e461001101"]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::22:58:14 ===
+Error in process <0.368.0> with exit value: {badarg,[{erlang,binary_to_list,["7ea89e52487d6e88f96ba4e461001101"]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::22:58:18 ===
+Error in process <0.385.0> with exit value: {badarg,[{erlang,binary_to_list,[null]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::22:59:00 ===
+Error in process <0.386.0> with exit value: {{badmatch,[]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:00:52 ===
+Error in process <0.389.0> with exit value: {{badmatch,[]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:04:08 ===
+Error in process <0.392.0> with exit value: {{badmatch,false},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:04:50 ===
+Error in process <0.404.0> with exit value: {badarg,[{erlang,'++',[<<4 bytes>>,[32|<<9 bytes>>]]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:05:14 ===
+Error in process <0.416.0> with exit value: {badarg,[{erlang,'++',[<<4 bytes>>,[32|<<9 bytes>>]]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:06:24 ===
+Error in process <0.426.0> with exit value: {badarg,[{erlang,'++',[<<4 bytes>>,[32|<<9 bytes>>]]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:07:51 ===
+Error in process <0.447.0> with exit value: {badarg,[{erlang,'++',[<<4 bytes>>,[32|<<9 bytes>>]]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:09:05 ===
+Error in process <0.459.0> with exit value: {badarg,[{erlang,'++',[<<4 bytes>>,[32|<<9 bytes>>]]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:10:12 ===
+Error in process <0.471.0> with exit value: {badarg,[{erlang,'++',[<<4 bytes>>,[32|<<9 bytes>>]]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:11:38 ===
+Error in process <0.483.0> with exit value: {badarg,[{erlang,'++',[<<4 bytes>>,[32|<<9 bytes>>]]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:13:37 ===
+Error in process <0.514.0> with exit value: {badarg,[{erlang,'++',[<<4 bytes>>,[32|<<9 bytes>>]]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:14:53 ===
+Error in process <0.535.0> with exit value: {badarg,[{erlang,'++',[<<4 bytes>>,[32|<<9 bytes>>]]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:15:03 ===
+Error in process <0.547.0> with exit value: {badarg,[{erlang,'++',[<<4 bytes>>,[32|<<9 bytes>>]]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:16:34 ===
+Error in process <0.573.0> with exit value: {{badmatch,false},[{view_loggedin,out,2},{controller_auth,login,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:17:22 ===
+Error in process <0.583.0> with exit value: {{badmatch,false},[{view_loggedin,out,2},{controller_auth,login,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:19:08 ===
+Error in process <0.595.0> with exit value: {{badmatch,false},[{view_loggedin,out,2},{controller_auth,login,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:19:10 ===
+Error in process <0.596.0> with exit value: {{badmatch,false},[{view_loggedin,out,2},{controller_auth,login,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Jun-2012::23:20:09 ===
+Error in process <0.614.0> with exit value: {{badmatch,false},[{view_loggedin,out,2},{controller_auth,login,3},{controller_auth,init,3},{router,executecontroller,4}]}
+

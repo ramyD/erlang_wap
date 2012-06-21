@@ -20,11 +20,12 @@ default(Kernel, _ExtraParameters, _A) ->
 	Kernel ! {ok, {ehtml, []}},
 	ok.
 
-login(Kernel, rExtraParameters, A) ->
+login(Kernel, _ExtraParameters, A) ->
   CD = lib_cookie:getcookiedata(A),
+  io:format("CD: ~p", [CD#cookiedata.permission]),
   case CD#cookiedata.permission of
     anonymous -> Kernel ! {ok, view_login:out(A)};
-    _ -> Kernel ! {ok, view_loggedin:out(A, [{"name", CD#cookiedata.first_name ++ " " ++ CD#cookiedata.middle_name ++ " " ++ CD#cookiedata.last_name}])}
+    _ -> Kernel ! {ok, view_loggedin:out(A, [{name, CD#cookiedata.first_name ++ " " ++ CD#cookiedata.last_name}])}
   end,
 	ok.
 
@@ -50,16 +51,14 @@ authenticate(Kernel, _ExtraParameters, A) ->
   UserDocument = object_people:get_user(UserId),
   {_, Permission} = lists:keyfind("permissions", 1, UserDocument),
   {_, FirstName} = lists:keyfind("first_name", 1, UserDocument),
-  {_, MiddleName} = lists:keyfind("middle_name", 1, UserDocument),
   {_, LastName} = lists:keyfind("last_name", 1, UserDocument),
   {_, Email} = lists:keyfind("email", 1, UserDocument),
 
   %% create a cookie
   {_, Timestamp, _} = now(),
-  CD = #cookiedata{user_id = binary_to_list(UserId),
+  CD = #cookiedata{user_id = UserId,
                    permission = binary_to_atom(Permission, utf8),
                    first_name = binary_to_list(FirstName),
-                   middle_name = binary_to_list(MiddleName),
                    last_name = binary_to_list(LastName),
                    email = binary_to_list(Email),
                    lastlogin = Timestamp},
@@ -69,5 +68,5 @@ authenticate(Kernel, _ExtraParameters, A) ->
   CookieObject = yaws_api:setcookie("YAWSSESSID", Cookie, "/"),
   
   %% output a successful message
-	Kernel ! {ok, [view_loggedin:out(A, [{"name", FirstName ++ " " ++ MiddleName ++ " " ++ LastName}]), CookieObject]},
+	Kernel ! {ok, [view_loggedin:out(A, [{name, Username}]), CookieObject]},
 	ok.

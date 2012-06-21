@@ -9,8 +9,8 @@
 out(A) -> 
  out(A, []).
 
-out(A, Parameters) -> 
-  {_, Name} = lists:keyfind("name", 1, Parameters),
+out(_A, Parameters) -> 
+  {_, Name} = lists:keyfind(name, 1, Parameters),
 	{ehtml, [
 		{html, [], [
 			{head, [], [

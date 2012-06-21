@@ -7,7 +7,7 @@
 -compile(export_all).
 
 getcookiedata(A) ->
-  case yaws_api:find_cookie_val("YAWSSESSID", A#arg.headers#headers.cookie) of
+  ase yaws_api:find_cookie_val("YAWSSESSID", A#arg.headers#headers.cookie) of
     [] -> CD = #cookiedata{user_id = "",
                            permission = anonymous,
                            first_name = "",
