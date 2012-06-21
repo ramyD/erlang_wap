@@ -16,8 +16,6 @@ init(Kernel, Parameters, A) ->
 		error:undef -> init(Kernel, "", A)
 	end.
 
-getcookie(A) ->
-
 default(Kernel, _ExtraParameters, _A) ->
 	Kernel ! {ok, {ehtml, []}},
 	ok.
