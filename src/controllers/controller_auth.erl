@@ -20,11 +20,11 @@ default(Kernel, _ExtraParameters, _A) ->
 	Kernel ! {ok, {ehtml, []}},
 	ok.
 
-login(Kernel, ExtraParameters, A) ->
+login(Kernel, rExtraParameters, A) ->
   CD = lib_cookie:getcookiedata(A),
-  case CD#cookiedata.permissions of
+  case CD#cookiedata.permission of
     anonymous -> Kernel ! {ok, view_login:out(A)};
-    _ -> {ok, view_loggedin:out(A, [{"name", CD#cookiedata.first_name ++ " " ++ CD#cookiedata.middle_name ++ " " ++ CD#cookiedata.last_name}])}
+    _ -> Kernel ! {ok, view_loggedin:out(A, [{"name", CD#cookiedata.first_name ++ " " ++ CD#cookiedata.middle_name ++ " " ++ CD#cookiedata.last_name}])}
   end,
 	ok.
 
@@ -57,7 +57,7 @@ authenticate(Kernel, _ExtraParameters, A) ->
   %% create a cookie
   {_, Timestamp, _} = now(),
   CD = #cookiedata{user_id = binary_to_list(UserId),
-                   permission = binary_to_atom(Permissoin, utf8),
+                   permission = binary_to_atom(Permission, utf8),
                    first_name = binary_to_list(FirstName),
                    middle_name = binary_to_list(MiddleName),
                    last_name = binary_to_list(LastName),
