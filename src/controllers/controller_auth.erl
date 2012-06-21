@@ -16,17 +16,17 @@ init(Kernel, Parameters, A) ->
 		error:undef -> init(Kernel, "", A)
 	end.
 
+getcookie(A) ->
+
 default(Kernel, _ExtraParameters, _A) ->
 	Kernel ! {ok, {ehtml, []}},
 	ok.
 
 login(Kernel, ExtraParameters, A) ->
-  case yaws_api:find_cookie_val("YAWSSESSID", A#arg.headers#headers.cookie) of
-    [] -> Kernel ! {ok, view_login:out(A)};
-    Cookie -> case yaws_api:cookieval_to_opaque(Cookie) of
-                {ok, CD} -> Kernel ! {ok, view_loggedin:out(A, [{"name", CD#cookiedata.first_name ++ " " ++ CD#cookiedata.middle_name ++ " " ++ CD#cookiedata.last_name}])};
-                {error, no_session} -> Kernel ! {ok, view_login:out(A)}
-              end
+  CD = lib_cookie:getcookiedata(A),
+  case CD#cookiedata.permissions of
+    anonymous -> Kernel ! {ok, view_login:out(A)};
+    _ -> {ok, view_loggedin:out(A, [{"name", CD#cookiedata.first_name ++ " " ++ CD#cookiedata.middle_name ++ " " ++ CD#cookiedata.last_name}])}
   end,
 	ok.
 
@@ -58,12 +58,12 @@ authenticate(Kernel, _ExtraParameters, A) ->
 
   %% create a cookie
   {_, Timestamp, _} = now(),
-  CD = #cookiedata{user_id = UserId,
-                   permission = Permission,
-                   first_name = FirstName,
-                   middle_name = MiddleName,
-                   last_name = LastName,
-                   email = Email,
+  CD = #cookiedata{user_id = binary_to_list(UserId),
+                   permission = binary_to_atom(Permissoin, utf8),
+                   first_name = binary_to_list(FirstName),
+                   middle_name = binary_to_list(MiddleName),
+                   last_name = binary_to_list(LastName),
+                   email = binary_to_list(Email),
                    lastlogin = Timestamp},
 
   %% we should get and store the users's permission inside the CookieData

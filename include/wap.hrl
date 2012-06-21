@@ -1,6 +1,6 @@
 %% record for the wap cookie
 -record(cookiedata, {user_id = "",
-                     permission = "anonymous",
+                     permission = anonymous,
                      first_name = "",
                      middle_name = "",
                      last_name = "",
