@@ -1,8 +1,9 @@
--module(view_loggedin).
+-module(view_chat).
 -author("ramy.daghstani@gmail.com").
 -export([out/1, out/2]).
 
 -include("/usr/lib/yaws/include/yaws_api.hrl").
+-include("wap.hrl").
 -compile(export_all).
 
 out(A) -> 
@@ -13,14 +14,12 @@ out(_A, Parameters) ->
 	{ehtml, [
 		{html, [], [
 			{head, [], [
-				{title, [], ["You are logged in"]},
+				{title, [], ["Chat room"]},
 				{script, [{src, "/priv/js/zepto.min.js"}]}
 			]},
 			{body, [], [
-				{h1, [], ["Login successful"]},
-				{p, [], ["welcome " ++ Name]},
-        {br},
-        {a, [{href, "/chat"}, {alt, "go to chat room"}], ["chat room"]}
+				{h1, [], ["Chat Room"]},
+        {br}
 			]}
 		]}
 	]}.
