@@ -1465,3 +1465,203 @@ Error in process <0.164.0> with exit value: {badarg,[{erlang,'++',[{error,bad_na
 =ERROR REPORT==== 18-Jun-2012::02:22:46 ===
 Error in process <0.180.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
 
+
+=ERROR REPORT==== 18-Jun-2012::20:02:55 ===
+Error in process <0.195.0> with exit value: {function_clause,[{string,substr,["js",1,-1]},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:03:20 ===
+Error in process <0.196.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:04:52 ===
+Error in process <0.206.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:05:01 ===
+Error in process <0.208.0> with exit value: {function_clause,[{string,substr,["js",1,-1]},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:05:12 ===
+Error in process <0.209.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:05:46 ===
+Error in process <0.216.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:06:00 ===
+Error in process <0.229.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:06:01 ===
+Error in process <0.230.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:06:52 ===
+Error in process <0.243.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:07:10 ===
+Error in process <0.257.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:08:46 ===
+Error in process <0.271.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:10:06 ===
+Error in process <0.278.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:10:23 ===
+Error in process <0.292.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:10:45 ===
+Error in process <0.305.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:11:58 ===
+Error in process <0.324.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:12:05 ===
+Error in process <0.338.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:12:59 ===
+Error in process <0.345.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:13:14 ===
+Error in process <0.359.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:31:31 ===
+Error in process <0.381.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:31:41 ===
+Error in process <0.388.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:31:49 ===
+Error in process <0.389.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:31:53 ===
+Error in process <0.390.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:32:13 ===
+Error in process <0.416.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:32:52 ===
+Error in process <0.430.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:33:54 ===
+Error in process <0.452.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:34:39 ===
+Error in process <0.460.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:34:46 ===
+Error in process <0.468.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:35:23 ===
+Error in process <0.481.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:35:27 ===
+Error in process <0.482.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:35:30 ===
+Error in process <0.483.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:36:43 ===
+Error in process <0.490.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:38:55 ===
+Error in process <0.499.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:39:03 ===
+Error in process <0.506.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:40:34 ===
+Error in process <0.521.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:43:19 ===
+Error in process <0.528.0> with exit value: {function_clause,[{string,rchr,["/home/ramy/git/erlang-wap/ebin","/"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:44:39 ===
+Error in process <0.536.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:45:32 ===
+Error in process <0.550.0> with exit value: {function_clause,[{string,rchr,["/home/ramy/git/erlang-wap/ebin","/"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:47:15 ===
+Error in process <0.558.0> with exit value: {function_clause,[{string,rchr,["/home/ramy/git/erlang-wap/ebin",'/']},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:49:07 ===
+Error in process <0.566.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:49:22 ===
+Error in process <0.574.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:49:35 ===
+Error in process <0.581.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:51:25 ===
+Error in process <0.68.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:52:36 ===
+Error in process <0.75.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:53:46 ===
+Error in process <0.89.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::20:54:28 ===
+Error in process <0.104.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::21:19:50 ===
+Error in process <0.117.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::21:27:32 ===
+Error in process <0.130.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::21:27:49 ===
+Error in process <0.138.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::21:38:53 ===
+Error in process <0.145.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 18-Jun-2012::21:39:15 ===
+Error in process <0.153.0> with exit value: {badarg,[{erlang,'++',[{error,bad_name},"/js/zepto.min.js"]},{controller_priv,js,3},{controller_priv,init,3},{router,executecontroller,4}]}
+

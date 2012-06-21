@@ -1,6 +1,6 @@
 -module(controller_priv).
 -author("ramy.daghstani@gmail.com").
--export([init/3, default/3]).
+-export([init/3]).
 
 -include("/usr/lib/yaws/include/yaws_api.hrl").
 -compile(export_all).
@@ -10,18 +10,19 @@ init(Kernel, "", A) ->
 
 init(Kernel, Parameters, A) ->
 	Folder = string:substr(Parameters, 1, string:chr(Parameters, $/)-1),
-	try (apply(?MODULE, list_to_atom(Folder), [Kernel, Parameters,  A])) of
+	try (apply(?MODULE, list_to_atom(Folder), [Kernel, [{file_path, Parameters}],  A])) of
 		ok -> ok
 	catch
 		error:undef -> init(Kernel, "", A)
 	end.
 
-default(Kernel, _Parameters, _A) ->
+default(Kernel, _ExtraParameters, _A) ->
 	Kernel ! {ok, {ehtml, []}},
 	ok.
 
-js(Kernel, Parameters, _A) ->
-	case file:read_file(code:priv_dir(web_app2) ++ "/" ++ Parameters) of
+js(Kernel, ExtraParameters, _A) ->
+  {_, FilePath} = lists:keyfind(file_path, 1, ExtraParameters),
+	case file:read_file(filename:absname("../priv/" ++ FilePath)) of
 		{error, Reason} ->
 			Kernel ! {ok, {html, Reason}};
 		{ok, Binary} ->
@@ -29,8 +30,9 @@ js(Kernel, Parameters, _A) ->
 	end,
 	ok.
 
-css(Kernel, Parameters, _A) ->
-	case file:read_file(code:priv_dir(web_app2) ++ "/" ++ Parameters) of
+css(Kernel, ExtraParameters, _A) ->
+  {_, FilePath} = lists:keyfind(file_path, 1, ExtraParameters),
+	case file:read_file(filename:absname("../priv/" ++ FilePath)) of
 		{error, Reason} ->
 			Kernel ! {ok, {html, Reason}};
 		{ok, Binary} ->
@@ -38,8 +40,9 @@ css(Kernel, Parameters, _A) ->
 	end,
 	ok.
 
-images(Kernel, Parameters, _A) ->
-	case string:substr(Parameters, string:char(Parameters, $.)+1) of
+images(Kernel, ExtraParameters, _A) ->
+  {_, FilePath} = lists:keyfind(file_path, 1, ExtraParameters),
+	case string:substr(FilePath, string:char(FilePath, $.)+1) of
 		"jpeg" -> MimeType = "image/jpeg";
 		"jpg" -> MimeType = "image/jpeg";
 		"gif" -> MimeType = "image/gif";
@@ -48,7 +51,7 @@ images(Kernel, Parameters, _A) ->
 		"tiff" -> MimeType = "image/tiff"
 	end,
 
-	case file:read_file(code:priv_dir(web_app2) ++ "/" ++ Parameters) of
+	case file:read_file(filename:absname("../priv/" ++ FilePath)) of
 		{error, Reason} ->
 			Kernel ! {ok, {html, Reason}};
 		{ok, Binary} ->

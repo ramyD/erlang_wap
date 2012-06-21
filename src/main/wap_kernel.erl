@@ -23,7 +23,6 @@ init() ->
 
 stop() -> 
 	inets:stop(),
-	application:stop(ecouch),
 	yaws:stop().
 
 out(A) ->
