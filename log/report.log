@@ -1849,3 +1849,12 @@ Error in process <0.596.0> with exit value: {{badmatch,false},[{view_loggedin,ou
 =ERROR REPORT==== 20-Jun-2012::23:20:09 ===
 Error in process <0.614.0> with exit value: {{badmatch,false},[{view_loggedin,out,2},{controller_auth,login,3},{controller_auth,init,3},{router,executecontroller,4}]}
 
+
+=ERROR REPORT==== 21-Jun-2012::00:27:31 ===
+Expected origin "http://localhost:8000" but found undefined.
+=ERROR REPORT==== 21-Jun-2012::00:27:31 ===
+Expected origin "http://localhost:8000" but found undefined.
+=ERROR REPORT==== 21-Jun-2012::00:27:46 ===
+Expected origin "http://localhost:8000" but found undefined.
+=ERROR REPORT==== 21-Jun-2012::00:28:28 ===
+Expected origin "http://localhost:8000" but found "http://127.0.0.1:8000".

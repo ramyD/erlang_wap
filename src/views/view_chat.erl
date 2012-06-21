@@ -20,6 +20,7 @@ out(_A, _Parameters) ->
 			{body, [], [
 				{h1, [], ["Chat Room"]},
         {br},
+        {'div', [{id, "msgs"}], []},
         {'div', [{id, "connect"}], [
           {input, [{id, "cA"}, {class, "button"}, {type, "submit"}, {value, "Connect"}, {name, "Connect"}], []}
         ]},
