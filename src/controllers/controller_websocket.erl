@@ -1,9 +1,8 @@
--module(controller_chat).
+-module(controller_websocket).
 -author("ramy.daghstani@gmail.com").
 -export([init/3]).
 
 -include("/usr/lib/yaws/include/yaws_api.hrl").
--include("wap.hrl").
 -compile(export_all).
 
 init(Kernel, "", A) ->
@@ -17,9 +16,5 @@ init(Kernel, Parameters, A) ->
 	end.
 
 default(Kernel, _ExtraParameters, A) ->
-  CD = lib_cookie:getcookiedata(A),
-  case CD#cookiedata.permission of
-    anonymous -> Kernel ! {ok, view_login:out(A)};
-    _ -> Kernel ! {ok, view_chat:out(A)}
-  end,
+	Kernel ! {ok, {websocket, lib_websocket, []}},
 	ok.

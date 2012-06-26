@@ -15,6 +15,7 @@ start(normal, []) ->
 init() -> 
 	inets:start(),
 	code:add_pathz("/usr/lib/yaws/ebin/"),
+  register(chat, spawn(wap_chat, init, [])),
 	Docroot = "/var/yaws",
 	Id = "my_server",
 	ServerConfiguration = [{servername, "localhostserver"}, {listen, {127,0,0,1}}, {port, 8000}, {appmods, [{"/", wap_kernel}]}],

@@ -1858,3 +1858,6 @@ Expected origin "http://localhost:8000" but found undefined.
 Expected origin "http://localhost:8000" but found undefined.
 =ERROR REPORT==== 21-Jun-2012::00:28:28 ===
 Expected origin "http://localhost:8000" but found "http://127.0.0.1:8000".
+=ERROR REPORT==== 26-Jun-2012::01:15:12 ===
+Error in process <0.81.0> with exit value: {{case_clause,{register,{"user: ",<0.81.0>}}},[{yaws_websockets,'-handle_result_fun/1-fun-0-',2},{lists,map,2},{yaws_websockets,loop,4}]}
+
