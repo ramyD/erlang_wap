@@ -2,6 +2,8 @@
 	[{description,"generic web app"},
 	 {vsn,"0.1"},
 	 {modules,[wap_kernel,
+             wap_chat,
+
 	    		   %% Router:
 	    		   router,
 
