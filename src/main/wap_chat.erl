@@ -16,19 +16,19 @@ init() ->
 
 loop(Users) ->
 	receive
-		{message, {{Handle, Pid}, Text}} ->
-			wap_chat:broadcast(Users, Handle, Text),
+		{message, Text} ->
+			wap_chat:broadcast(Users, Text),
       loop(Users);
-		{drop, {Handle, Pid}} ->
+		{drop, Pid} ->
       NewUserList = wap_chat:drop(Users, Pid),
       loop(NewUserList);
-    {register, {Handle, Pid}} ->
+    {register, Pid} ->
       NewUserList = wap_chat:register(Users, Pid),
       loop(NewUserList)
 	end.
 
-broadcast(Users, Sender, Text) ->
-  lists:map(fun(P) -> yaws_api:websocket_send(P, {text, list_to_binary(Text)}) end, Users),
+broadcast(Users, Text) ->
+  lists:foreach(fun(P) -> yaws_api:websocket_send(P, {text, Text}) end, Users),
   ok.
 
 drop(Users, Sender) ->

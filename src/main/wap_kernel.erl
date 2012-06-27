@@ -30,8 +30,8 @@ out(A) ->
 	process_flag(trap_exit, true),
 	spawn_link(router, route, [self(), A#arg.appmoddata, A]),
 	receive
-		{ok, Html} ->
-			Html;
+		{ok, Response} ->
+			Response;
 		{'EXIT', _Pid, Reason} ->
 			{ehtml, [{section, [], ["routing dispatch failed, " ++ erlang:atom_to_list(Reason)]}]}
 	after 10000 ->

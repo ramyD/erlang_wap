@@ -6,11 +6,25 @@
 -include("wap.hrl").
 -compile(export_all).
 
+handle_message({text, <<"client-connected">>}) ->
+  chat ! {register, self()},
+  noreply;
+handle_message({text, Data}) ->
+  chat ! {message, Data},
+  noreply;
 handle_message({Type, Data}) ->
-  case Type of
-    text -> case Data of
-              <<"client-connected">> -> chat ! {register, {"user: ", self()}};
-              %%  _ -> {reply, {Type, Data}}
-              _ -> chat ! {message, {"user: ", self()}, Data}
-            end
-  end.
+  noreply.
+
+%%   io:format("sending from pid: ~p", [self()]),
+%%   {reply, {Type, Data}}.
+
+
+
+
+%%  case Type of
+%%    text -> case Data of
+%%              <<"client-connected">> -> chat ! {register, {"user: ", self()}};
+%%              %%  _ -> {reply, {Type, Data}}
+%%              _ -> chat ! {message, {self(), Data}}
+%%            end
+%%  end.

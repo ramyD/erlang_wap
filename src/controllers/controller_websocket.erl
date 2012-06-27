@@ -3,6 +3,7 @@
 -export([init/3]).
 
 -include("/usr/lib/yaws/include/yaws_api.hrl").
+-include("wap.hrl").
 -compile(export_all).
 
 init(Kernel, "", A) ->
@@ -16,5 +17,7 @@ init(Kernel, Parameters, A) ->
 	end.
 
 default(Kernel, _ExtraParameters, A) ->
+  %% io:format("registering pid: ~p", [self()]),
+  %% chat ! {register, {"user", self()}},
 	Kernel ! {ok, {websocket, lib_websocket, []}},
 	ok.
