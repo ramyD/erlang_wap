@@ -5,9 +5,9 @@
 -compile(export_all).
 
 get_passwords() ->
-  {ok, {{"HTTP/1.1",200,"OK"}, _, DbRawRows}} = httpc:request(get, {"http://localhost:5984/cadets/_design/authorization/_view/registration", [{"Content-Type", rfc4627:mime_type()}]}, [], [{full_result, true}]),
+  {ok, {{"HTTP/1.1",200,"OK"}, _Header, DbRawRows}} = httpc:request(get, {"http://localhost:5984/cadets/_design/authorization/_view/registration", [{"Content-Type", rfc4627:mime_type()}]}, [], [{full_result, true}]),
   DbRowObjects = rfc4627:decode_noauto(DbRawRows),
-  {ok, {obj,[{"total_rows",1}, {"offset",0}, {"rows", Rows}]}, []} = DbRowObjects,
+  {ok, {obj,[{"total_rows", _Rownum}, {"offset",0}, {"rows", Rows}]}, []} = DbRowObjects,
   Rows.
 
 get_user(UserId) ->

@@ -9,12 +9,13 @@
 out(A) -> 
  out(A, []).
 
-out(_A, _Parameters) -> 
+out(A, _Parameters) -> 
 	{ehtml, [
 		{html, [], [
 			{head, [], [
 				{title, [], ["Chat room"]},
 				{script, [{src, "/priv/js/chatwebsocket.js"}]},
+        {script, [{type, "text/javascript"}], [" client.websockethost = '" ++ A#arg.headers#headers.host ++ "'; "]},
 				{style, [{type, "text/cs"}], ["div.hidden { display: none; }"]}
 			]},
 			{body, [], [

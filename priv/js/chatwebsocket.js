@@ -8,8 +8,10 @@ function $() { return document.getElementById(arguments[0]); }
 // Get the value of an Element
 function $F() { return document.getElementById(arguments[0]).value; }
 var client = {
+  websockethost: 'localhost',
+
   connect: function(){
-    this._ws=new WS("ws://localhost:8000/websocket");
+    this._ws=new WS('ws://' + client.websockethost + '/websocket');
     this._ws.onopen=this._onopen;
     this._ws.onmessage=this._onmessage;
     this._ws.onclose=this._onclose;

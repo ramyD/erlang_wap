@@ -1941,3 +1941,176 @@ Error in process <0.49.0> with exit value: {undef,[{wap_chat,broadcast,[[<0.81.0
 =ERROR REPORT==== 27-Jun-2012::01:23:56 ===
 Error in process <0.49.0> with exit value: {function_clause,[{wap_chat,'-broadcast/2-fun-0-',[<0.81.0>,<<4 bytes>>]},{lists,map,2},{wap_chat,broadcast,2},{wap_chat,loop,1}]}
 
+
+=ERROR REPORT==== 3-Jul-2012::21:02:03 ===
+Error in process <0.75.0> with exit value: {{badmatch,{ok,{obj,[{"total_rows",2},{"offset",0},{"rows",[{obj,[{"id",<<32 bytes>>},{"key",<<12 bytes>>},{"value",<<4 bytes>>}]},{obj,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<4 bytes>>}]}]}]},[]}},[{object_people,get_passwords,0},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller... 
+
+
+=ERROR REPORT==== 3-Jul-2012::21:02:37 ===
+Error in process <0.79.0> with exit value: {{badmatch,{ok,{obj,[{"total_rows",2},{"offset",0},{"rows",[{obj,[{"id",<<32 bytes>>},{"key",<<12 bytes>>},{"value",<<4 bytes>>}]},{obj,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<4 bytes>>}]}]}]},[]}},[{object_people,get_passwords,0},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller... 
+
+
+=ERROR REPORT==== 3-Jul-2012::21:02:47 ===
+Error in process <0.81.0> with exit value: {{badmatch,{ok,{obj,[{"total_rows",2},{"offset",0},{"rows",[{obj,[{"id",<<32 bytes>>},{"key",<<12 bytes>>},{"value",<<4 bytes>>}]},{obj,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<4 bytes>>}]}]}]},[]}},[{object_people,get_passwords,0},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller... 
+
+
+=ERROR REPORT==== 3-Jul-2012::21:26:40 ===
+Error in process <0.74.0> with exit value: {{badmatch,{ok,{obj,[{"total_rows",2},{"offset",0},{"rows",[{obj,[{"id",<<32 bytes>>},{"key",<<12 bytes>>},{"value",<<4 bytes>>}]},{obj,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<4 bytes>>}]}]}]},[]}},[{object_people,get_passwords,0},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller... 
+
+
+=ERROR REPORT==== 3-Jul-2012::21:29:29 ===
+Error in process <0.87.0> with exit value: {{badmatch,{ok,{obj,[{"total_rows",2},{"offset",0},{"rows",[{obj,[{"id",<<32 bytes>>},{"key",<<12 bytes>>},{"value",<<4 bytes>>}]},{obj,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<4 bytes>>}]}]}]},[]}},[{object_people,get_passwords,0},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller... 
+
+
+=ERROR REPORT==== 3-Jul-2012::21:31:39 ===
+Error in process <0.113.0> with exit value: {{badmatch,{ok,{obj,[{"total_rows",2},{"offset",0},{"rows",[{obj,[{"id",<<32 bytes>>},{"key",<<12 bytes>>},{"value",<<4 bytes>>}]},{obj,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<4 bytes>>}]}]}]},[]}},[{object_people,get_passwords,0},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller... 
+
+
+=ERROR REPORT==== 3-Jul-2012::21:32:46 ===
+Error in process <0.120.0> with exit value: {{badmatch,{ok,{obj,[{"total_rows",2},{"offset",0},{"rows",[{obj,[{"id",<<32 bytes>>},{"key",<<12 bytes>>},{"value",<<4 bytes>>}]},{obj,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<4 bytes>>}]}]}]},[]}},[{object_people,get_passwords,0},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller... 
+
+
+=ERROR REPORT==== 3-Jul-2012::21:38:23 ===
+Error in process <0.75.0> with exit value: {{badmatch,{ok,{obj,[{"total_rows",2},{"offset",0},{"rows",[{obj,[{"id",<<32 bytes>>},{"key",<<12 bytes>>},{"value",<<4 bytes>>}]},{obj,[{"id",<<32 bytes>>},{"key",<<14 bytes>>},{"value",<<4 bytes>>}]}]}]},[]}},[{object_people,get_passwords,0},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller... 
+
+
+=ERROR REPORT==== 7-Jul-2012::14:32:54 ===
+Error in process <0.77.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{view_chat,out,2},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 7-Jul-2012::14:38:36 ===
+Error in process <0.79.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{view_chat,out,2},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 7-Jul-2012::14:40:07 ===
+Error in process <0.77.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{view_chat,out,2},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 7-Jul-2012::14:41:18 ===
+Error in process <0.87.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{view_chat,out,2},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 7-Jul-2012::14:41:20 ===
+Error in process <0.89.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{view_chat,out,2},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 7-Jul-2012::14:41:22 ===
+Error in process <0.90.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{view_chat,out,2},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 7-Jul-2012::14:41:25 ===
+Error in process <0.91.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{view_chat,out,2},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 7-Jul-2012::14:41:51 ===
+Error in process <0.101.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{view_chat,out,2},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 7-Jul-2012::14:41:52 ===
+Error in process <0.102.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{view_chat,out,2},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 7-Jul-2012::14:43:05 ===
+Error in process <0.133.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{view_chat,out,2},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 7-Jul-2012::14:45:48 ===
+Error in process <0.23.0> with exit value: {function_clause,[{user_drv,get_line,[{expand,"q",[],{line," --> ",{"q",[]},none},[]},#Port<0.418>,#Port<0.418>]},{user_drv,switch_loop,3},{user_drv,handle_escape,4}]}
+
+
+=ERROR REPORT==== 7-Jul-2012::14:45:48 ===
+** Generic server <0.22.0> terminating 
+** Last message in was {'EXIT',<0.24.0>,
+                        {function_clause,
+                         [{user_drv,get_line,
+                           [{expand,"q",[],{line," --> ",{"q",[]},none},[]},
+                            #Port<0.418>,#Port<0.418>]},
+                          {user_drv,switch_loop,3},
+                          {user_drv,handle_escape,4}]}}
+** When Server state == {state,user_sup,undefined,<0.24.0>,
+                               {<0.22.0>,user_sup}}
+** Reason for termination == 
+** {function_clause,
+       [{user_drv,get_line,
+            [{expand,"q",[],{line," --> ",{"q",[]},none},[]},
+             #Port<0.418>,#Port<0.418>]},
+        {user_drv,switch_loop,3},
+        {user_drv,handle_escape,4}]}
+
+=ERROR REPORT==== 7-Jul-2012::14:45:48 ===
+** gen_event handler error_logger_tty_h crashed.
+** Was installed in error_logger
+** Last event was: {error,<0.8.0>,
+                          {emulator,"~s~n",
+                                    ["Error in process <0.23.0> with exit value: {function_clause,[{user_drv,get_line,[{expand,\"q\",[],{line,\" --> \",{\"q\",[]},none},[]},#Port<0.418>,#Port<0.418>]},{user_drv,switch_loop,3},{user_drv,handle_escape,4}]}\n"]}}
+** When handler state == {<0.24.0>,error_logger}
+** Reason == {badarg,[{io,format,
+                          [user,
+                           ["\n",61,"ERROR REPORT",61,61,61,61,32,"7",45,
+                            "Jul",45,"2012",58,58,"14",58,"45",58,"48",32,61,
+                            61,61,"\n",
+                            "Error in process <0.23.0> with exit value: {function_clause,[{user_drv,get_line,[{expand,\"q\",[],{line,\" --> \",{\"q\",[]},none},[]},#Port<0.418>,#Port<0.418>]},{user_drv,switch_loop,3},{user_drv,handle_escape,4}]}\n",
+                            "\n"],
+                           []]},
+                      {error_logger_tty_h,handle_event,2},
+                      {gen_event,server_update,4},
+                      {gen_event,server_notify,4},
+                      {gen_event,server_notify,4},
+                      {gen_event,handle_msg,5},
+                      {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 7-Jul-2012::14:46:37 ===
+Error in process <0.77.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 7-Jul-2012::14:48:13 ===
+Error in process <0.85.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 7-Jul-2012::14:48:14 ===
+Error in process <0.86.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 8-Jul-2012::01:47:47 ===
+Error in process <0.77.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 8-Jul-2012::01:56:08 ===
+Error in process <0.77.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 8-Jul-2012::02:11:30 ===
+Error in process <0.70.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 8-Jul-2012::02:11:31 ===
+Error in process <0.71.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 8-Jul-2012::02:11:41 ===
+Error in process <0.79.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 8-Jul-2012::02:12:07 ===
+Error in process <0.70.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 8-Jul-2012::02:12:09 ===
+Error in process <0.71.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 8-Jul-2012::02:12:14 ===
+Error in process <0.72.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{controller_chat,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 8-Jul-2012::16:06:24 ===
+Error in process <0.69.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{router,route,3}]}
+
+
+=ERROR REPORT==== 8-Jul-2012::16:07:13 ===
+Error in process <0.69.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{router,route,3}]}
+
+
+=ERROR REPORT==== 8-Jul-2012::16:10:35 ===
+Error in process <0.69.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{router,route,3}]}
+

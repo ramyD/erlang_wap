@@ -35,4 +35,5 @@ drop(Users, Sender) ->
   lists:delete(Sender, Users). 
 
 register(Users, Sender) ->
+  io:format("adding user: ~p \n to chatroom with total users: ~p", [Sender, Users]),
   [Sender | Users].

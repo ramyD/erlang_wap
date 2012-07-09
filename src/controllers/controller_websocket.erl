@@ -16,7 +16,7 @@ init(Kernel, Parameters, A) ->
 		error:undef -> init(Kernel, "", A)
 	end.
 
-default(Kernel, _ExtraParameters, A) ->
+default(Kernel, _ExtraParameters, _A) ->
   %% io:format("registering pid: ~p", [self()]),
   %% chat ! {register, {"user", self()}},
 	Kernel ! {ok, {websocket, lib_websocket, []}},
