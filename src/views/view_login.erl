@@ -16,9 +16,9 @@ out(A, Parameters) ->
 				{script, [{src, "/priv/js/zepto.min.js"}]}
 			]},
 			{body, [], [
-				{p, [], ["this is the login page"]},
+				{p, [], ["Login to MOAT framework"]},
 				{form, [{method, "post"}, {action, "/auth/authenticate"}], [
-					{input, [{type, text}, {width, "50"}, {name, user}, {placeholder, username}] },
+					{input, [{type, email}, {width, "50"}, {name, email}, {placeholder, email}] },
 					{br},
 					{input, [{type, password}, {width, "50"}, {name, pass}, {placeholder, password}] },
 					{br},

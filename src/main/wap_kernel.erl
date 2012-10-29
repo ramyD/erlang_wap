@@ -18,7 +18,8 @@ init() ->
   register(chat, spawn(wap_chat, init, [])),
 	Docroot = "/var/yaws",
 	Id = "my_server",
-	ServerConfiguration = [{servername, "localhostserver"}, {listen, {192,168,1,106}}, {port, 8000}, {appmods, [{"/", wap_kernel}]}],
+	ServerConfiguration = [{servername, "localhost"}, {listen, {127,0,0,1}}, {port, 8000}, {appmods, [{"/", wap_kernel}]}],
+	%% ServerConfiguration = [{servername, "localhost"}, {listen, {10,42,0,1}}, {port, 8000}, {appmods, [{"/", wap_kernel}]}],
 	GlobalConfiguration = [{logdir, filename:absname("../log")}, {ebin_dir, [filename:absname("")]}, {id, Id}],
 	yaws:start_embedded(Docroot, ServerConfiguration, GlobalConfiguration, Id).
 

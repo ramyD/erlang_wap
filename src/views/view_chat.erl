@@ -16,7 +16,7 @@ out(A, _Parameters) ->
 				{title, [], ["Chat room"]},
 				{script, [{src, "/priv/js/chatwebsocket.js"}]},
         {script, [{type, "text/javascript"}], [" client.websockethost = '" ++ A#arg.headers#headers.host ++ "'; "]},
-				{style, [{type, "text/cs"}], ["div.hidden { display: none; }"]}
+				{style, [{type, "text/css"}], ["div.hidden { display: none; }"]}
 			]},
 			{body, [], [
 				{h1, [], ["Chat Room"]},
@@ -27,9 +27,11 @@ out(A, _Parameters) ->
         ]},
         {br},
         {'div', [{id, "connected"}, {class, "hidden"}], [
-          "Say Something",
-          {input, [{id, "phrase"}, {type, "text"}], []},
-          {input, [{id, "sendB"}, {class, "button"}, {type, "submit"}, {value, "Send"}, {name, "connect"}], []}
+          {form, [{name, "chatInterface"}, {action, "#"}, {method, "get"}], [
+            "Say Something",
+            {input, [{id, "phrase"}, {type, "text"}], []},
+            {input, [{id, "sendB"}, {class, "button"}, {type, "submit"}, {value, "Send"}, {name, "connect"}], []}
+          ]}
         ]}
 			]}
 		]}

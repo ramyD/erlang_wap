@@ -2114,3 +2114,297 @@ Error in process <0.69.0> with exit value: {{badrecord,sconf},[{yaws_api,request
 =ERROR REPORT==== 8-Jul-2012::16:10:35 ===
 Error in process <0.69.0> with exit value: {{badrecord,sconf},[{yaws_api,request_url,1},{router,route,3}]}
 
+
+=ERROR REPORT==== 23-Sep-2012::15:24:13 ===
+Error in process <0.76.0> with exit value: {badarith,[{object_people,get_password_by_email,1},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Sep-2012::15:27:39 ===
+Error in process <0.92.0> with exit value: {badarith,[{object_people,get_password_by_email,1},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Sep-2012::15:28:18 ===
+Error in process <0.99.0> with exit value: {{badmatch,[{obj,[{"id",<<32 bytes>>},{"key",<<31 bytes>>},{"value",1234}]}]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Sep-2012::15:29:29 ===
+Error in process <0.113.0> with exit value: {{badmatch,[{obj,[{"id",<<32 bytes>>},{"key",<<31 bytes>>},{"value",1234}]}]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Sep-2012::15:31:31 ===
+Error in process <0.133.0> with exit value: {{badmatch,[{obj,[{"id",<<32 bytes>>},{"key",<<31 bytes>>},{"value",1234}]}]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Sep-2012::15:32:23 ===
+Error in process <0.145.0> with exit value: {{badmatch,[{obj,[{"id",<<32 bytes>>},{"key",<<31 bytes>>},{"value",1234}]}]},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Sep-2012::15:34:35 ===
+Error in process <0.148.0> with exit value: {{badmatch,{ok,{{"HTTP/1.1",404,"Object Not Found"},[{"cache-control","must-revalidate"},{"date","Sun, 23 Sep 2012 19:34:35 GMT"},{"server","CouchDB/1.0.1 (Erlang OTP/R14B)"},{"content-length","41"},{"content-type","text/plain;cha... 
+
+
+=ERROR REPORT==== 23-Sep-2012::15:36:01 ===
+Error in process <0.166.0> with exit value: {{badmatch,{ok,{{"HTTP/1.1",404,"Object Not Found"},[{"cache-control","must-revalidate"},{"date","Sun, 23 Sep 2012 19:36:01 GMT"},{"server","CouchDB/1.0.1 (Erlang OTP/R14B)"},{"content-length","41"},{"content-type","text/plain;cha... 
+
+
+=ERROR REPORT==== 23-Sep-2012::15:36:04 ===
+Error in process <0.168.0> with exit value: {{badmatch,{ok,{{"HTTP/1.1",404,"Object Not Found"},[{"cache-control","must-revalidate"},{"date","Sun, 23 Sep 2012 19:36:04 GMT"},{"server","CouchDB/1.0.1 (Erlang OTP/R14B)"},{"content-length","41"},{"content-type","text/plain;cha... 
+
+
+=ERROR REPORT==== 23-Sep-2012::15:37:02 ===
+Error in process <0.185.0> with exit value: {{badmatch,{ok,{{"HTTP/1.1",404,"Object Not Found"},[{"cache-control","must-revalidate"},{"date","Sun, 23 Sep 2012 19:37:02 GMT"},{"server","CouchDB/1.0.1 (Erlang OTP/R14B)"},{"content-length","41"},{"content-type","text/plain;cha... 
+
+
+=ERROR REPORT==== 23-Sep-2012::15:37:21 ===
+Error in process <0.202.0> with exit value: {{badmatch,{ok,{{"HTTP/1.1",404,"Object Not Found"},[{"cache-control","must-revalidate"},{"date","Sun, 23 Sep 2012 19:37:21 GMT"},{"server","CouchDB/1.0.1 (Erlang OTP/R14B)"},{"content-length","41"},{"content-type","text/plain;cha... 
+
+
+=ERROR REPORT==== 23-Sep-2012::15:38:11 ===
+Error in process <0.210.0> with exit value: {{badmatch,{"Email",<<31 bytes>>}},[{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Sep-2012::15:39:28 ===
+Error in process <0.228.0> with exit value: {badarg,[{erlang,binary_to_list,["ramy.daghstani+cadets@gmail.com"]},{controller_auth,authenticate,3},{controller_auth,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 7-Oct-2012::22:57:43 ===
+Error in process <0.83.0> with exit value: {{badmatch,false},[{view_create,out,2},{controller_create,default,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 20-Oct-2012::03:06:48 ===
+The on_load function for module json returned {error,
+                                               {load_failed,
+                                                "Failed to load NIF library: './priv/json.so: cannot open shared object file: No such file or directory'"}}
+
+=ERROR REPORT==== 20-Oct-2012::03:07:09 ===
+The on_load function for module json returned {error,
+                                               {load_failed,
+                                                "Failed to load NIF library: './priv/json.so: cannot open shared object file: No such file or directory'"}}
+
+=ERROR REPORT==== 20-Oct-2012::03:07:11 ===
+The on_load function for module json returned {error,
+                                               {load_failed,
+                                                "Failed to load NIF library: './priv/json.so: cannot open shared object file: No such file or directory'"}}
+
+=ERROR REPORT==== 22-Oct-2012::20:48:45 ===
+The on_load function for module json returned {error,
+                                               {load_failed,
+                                                "Failed to load NIF library: './priv/json.so: cannot open shared object file: No such file or directory'"}}
+
+=ERROR REPORT==== 22-Oct-2012::20:53:48 ===
+The on_load function for module json returned {error,
+                                               {load_failed,
+                                                "Failed to load NIF library: './priv/json.so: cannot open shared object file: No such file or directory'"}}
+
+=ERROR REPORT==== 22-Oct-2012::20:59:27 ===
+The on_load function for module json returned {error,
+                                               {load_failed,
+                                                "Failed to load NIF library: './priv/json.so: cannot open shared object file: No such file or directory'"}}
+
+=ERROR REPORT==== 22-Oct-2012::23:38:39 ===
+Error in process <0.86.0> with exit value: {{try_clause,{ok,{content,"application/json",{ok,<<36 bytes>>}}}},[{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 22-Oct-2012::23:38:39 ===
+Yaws process died: {function_clause,
+                       [{yaws_server,binary_size,
+                            [0,
+                             {ok,<<"[{\"text\":\"People\",\"value\":\"People\"}]">>}]},
+                        {yaws_server,binary_size,2},
+                        {yaws_server,deliver_accumulated,5},
+                        {yaws_server,finish_up_dyn_file,2},
+                        {yaws_server,aloop,3},
+                        {yaws_server,acceptor0,2},
+                        {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 22-Oct-2012::23:38:39 ===
+Error in process <0.90.0> with exit value: {{try_clause,{ok,{content,"application/json",{ok,<<36 bytes>>}}}},[{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 22-Oct-2012::23:38:39 ===
+Yaws process died: {function_clause,
+                       [{yaws_server,binary_size,
+                            [0,
+                             {ok,<<"[{\"text\":\"People\",\"value\":\"People\"}]">>}]},
+                        {yaws_server,binary_size,2},
+                        {yaws_server,deliver_accumulated,5},
+                        {yaws_server,finish_up_dyn_file,2},
+                        {yaws_server,aloop,3},
+                        {yaws_server,acceptor0,2},
+                        {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 22-Oct-2012::23:38:39 ===
+Yaws process died: {function_clause,
+                       [{yaws_server,binary_size,
+                            [0,
+                             {ok,<<"[{\"text\":\"People\",\"value\":\"People\"}]">>}]},
+                        {yaws_server,binary_size,2},
+                        {yaws_server,deliver_accumulated,5},
+                        {yaws_server,finish_up_dyn_file,2},
+                        {yaws_server,aloop,3},
+                        {yaws_server,acceptor0,2},
+                        {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 22-Oct-2012::23:38:39 ===
+Error in process <0.91.0> with exit value: {{try_clause,{ok,{content,"application/json",{ok,<<36 bytes>>}}}},[{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 22-Oct-2012::23:38:39 ===
+Error in process <0.92.0> with exit value: {{try_clause,{ok,{content,"application/json",{ok,<<36 bytes>>}}}},[{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 22-Oct-2012::23:38:39 ===
+Yaws process died: {function_clause,
+                       [{yaws_server,binary_size,
+                            [0,
+                             {ok,<<"[{\"text\":\"People\",\"value\":\"People\"}]">>}]},
+                        {yaws_server,binary_size,2},
+                        {yaws_server,deliver_accumulated,5},
+                        {yaws_server,finish_up_dyn_file,2},
+                        {yaws_server,aloop,3},
+                        {yaws_server,acceptor0,2},
+                        {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 23-Oct-2012::00:10:19 ===
+Yaws process died: {function_clause,
+                       [{yaws_server,binary_size,
+                            [0,
+                             {ok,<<"[{\"text\":\"People\",\"value\":\"People\"}]">>}]},
+                        {yaws_server,binary_size,2},
+                        {yaws_server,deliver_accumulated,5},
+                        {yaws_server,finish_up_dyn_file,2},
+                        {yaws_server,aloop,3},
+                        {yaws_server,acceptor0,2},
+                        {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 23-Oct-2012::00:10:19 ===
+Error in process <0.83.0> with exit value: {{try_clause,{ok,{content,"application/json",{ok,<<36 bytes>>}}}},[{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Oct-2012::00:10:19 ===
+Yaws process died: {function_clause,
+                       [{yaws_server,binary_size,
+                            [0,
+                             {ok,<<"[{\"text\":\"People\",\"value\":\"People\"}]">>}]},
+                        {yaws_server,binary_size,2},
+                        {yaws_server,deliver_accumulated,5},
+                        {yaws_server,finish_up_dyn_file,2},
+                        {yaws_server,aloop,3},
+                        {yaws_server,acceptor0,2},
+                        {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 23-Oct-2012::00:10:19 ===
+Error in process <0.88.0> with exit value: {{try_clause,{ok,{content,"application/json",{ok,<<36 bytes>>}}}},[{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Oct-2012::00:10:19 ===
+Yaws process died: {function_clause,
+                       [{yaws_server,binary_size,
+                            [0,
+                             {ok,<<"[{\"text\":\"People\",\"value\":\"People\"}]">>}]},
+                        {yaws_server,binary_size,2},
+                        {yaws_server,deliver_accumulated,5},
+                        {yaws_server,finish_up_dyn_file,2},
+                        {yaws_server,aloop,3},
+                        {yaws_server,acceptor0,2},
+                        {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 23-Oct-2012::00:10:19 ===
+Error in process <0.89.0> with exit value: {{try_clause,{ok,{content,"application/json",{ok,<<36 bytes>>}}}},[{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Oct-2012::00:10:19 ===
+Error in process <0.91.0> with exit value: {{try_clause,{ok,{content,"application/json",{ok,<<36 bytes>>}}}},[{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Oct-2012::00:10:19 ===
+Yaws process died: {function_clause,
+                       [{yaws_server,binary_size,
+                            [0,
+                             {ok,<<"[{\"text\":\"People\",\"value\":\"People\"}]">>}]},
+                        {yaws_server,binary_size,2},
+                        {yaws_server,deliver_accumulated,5},
+                        {yaws_server,finish_up_dyn_file,2},
+                        {yaws_server,aloop,3},
+                        {yaws_server,acceptor0,2},
+                        {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 23-Oct-2012::00:12:14 ===
+Error in process <0.84.0> with exit value: {{try_clause,{ok,{content,"application/json",{ok,<<36 bytes>>}}}},[{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Oct-2012::00:12:14 ===
+Yaws process died: {function_clause,
+                       [{yaws_server,binary_size,
+                            [0,
+                             {ok,<<"[{\"text\":\"People\",\"value\":\"People\"}]">>}]},
+                        {yaws_server,binary_size,2},
+                        {yaws_server,deliver_accumulated,5},
+                        {yaws_server,finish_up_dyn_file,2},
+                        {yaws_server,aloop,3},
+                        {yaws_server,acceptor0,2},
+                        {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 23-Oct-2012::00:12:14 ===
+Error in process <0.88.0> with exit value: {{try_clause,{ok,{content,"application/json",{ok,<<36 bytes>>}}}},[{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Oct-2012::00:12:14 ===
+Yaws process died: {function_clause,
+                       [{yaws_server,binary_size,
+                            [0,
+                             {ok,<<"[{\"text\":\"People\",\"value\":\"People\"}]">>}]},
+                        {yaws_server,binary_size,2},
+                        {yaws_server,deliver_accumulated,5},
+                        {yaws_server,finish_up_dyn_file,2},
+                        {yaws_server,aloop,3},
+                        {yaws_server,acceptor0,2},
+                        {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 23-Oct-2012::00:12:14 ===
+Yaws process died: {function_clause,
+                       [{yaws_server,binary_size,
+                            [0,
+                             {ok,<<"[{\"text\":\"People\",\"value\":\"People\"}]">>}]},
+                        {yaws_server,binary_size,2},
+                        {yaws_server,deliver_accumulated,5},
+                        {yaws_server,finish_up_dyn_file,2},
+                        {yaws_server,aloop,3},
+                        {yaws_server,acceptor0,2},
+                        {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 23-Oct-2012::00:12:14 ===
+Error in process <0.89.0> with exit value: {{try_clause,{ok,{content,"application/json",{ok,<<36 bytes>>}}}},[{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Oct-2012::00:12:14 ===
+Error in process <0.90.0> with exit value: {{try_clause,{ok,{content,"application/json",{ok,<<36 bytes>>}}}},[{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Oct-2012::00:12:14 ===
+Yaws process died: {function_clause,
+                       [{yaws_server,binary_size,
+                            [0,
+                             {ok,<<"[{\"text\":\"People\",\"value\":\"People\"}]">>}]},
+                        {yaws_server,binary_size,2},
+                        {yaws_server,deliver_accumulated,5},
+                        {yaws_server,finish_up_dyn_file,2},
+                        {yaws_server,aloop,3},
+                        {yaws_server,acceptor0,2},
+                        {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 23-Oct-2012::00:15:57 ===
+Error in process <0.84.0> with exit value: {badarg,[{erlang,binary_to_list,[[{[{<<4 bytes>>,<<6 bytes>>},{<<5 bytes>>,<<6 bytes>>}]}]]},{controller_create,get_template_names,3},{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Oct-2012::00:20:25 ===
+Error in process <0.84.0> with exit value: {{try_clause,{ok,{find,{ok,<<36 bytes>>}}}},[{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Oct-2012::00:22:45 ===
+Error in process <0.84.0> with exit value: {{try_clause,{ok,{content,"application/json",<<36 bytes>>}}},[{controller_create,init,3},{router,executecontroller,4}]}
+
+
+=ERROR REPORT==== 23-Oct-2012::00:23:38 ===
+Error in process <0.86.0> with exit value: {{try_clause,{ok,{content,"application/json",<<36 bytes>>}}},[{controller_create,init,3},{router,executecontroller,4}]}
+

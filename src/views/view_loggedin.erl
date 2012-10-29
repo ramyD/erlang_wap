@@ -9,7 +9,7 @@ out(A) ->
  out(A, []).
 
 out(_A, Parameters) -> 
-  {_, Name} = lists:keyfind(name, 1, Parameters),
+	{_, Name} = lists:keyfind(name, 1, Parameters),
 	{ehtml, [
 		{html, [], [
 			{head, [], [
@@ -19,8 +19,12 @@ out(_A, Parameters) ->
 			{body, [], [
 				{h1, [], ["Login successful"]},
 				{p, [], ["welcome " ++ Name]},
-        {br},
-        {a, [{href, "/chat"}, {alt, "go to chat room"}], ["chat room"]}
+				{br},
+				{a, [{href, "/chat"}, {alt, "go to chat room"}], ["chat room"]},
+				{br},
+				{a, [{href, "/create"}, {alt, "create"}], ["create people"]},
+				{br},
+				{a, [{href, "/moat/create"}, {alt, "get a cadet's documents"}], ["get a cadet's document"]}
 			]}
 		]}
 	]}.

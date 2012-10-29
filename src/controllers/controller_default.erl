@@ -3,6 +3,7 @@
 -export([init/3]).
 
 -include("/usr/lib/yaws/include/yaws_api.hrl").
+-include("wap.hrl").
 -compile(export_all).
 
 init(Kernel, "", A) ->
@@ -15,6 +16,10 @@ init(Kernel, Parameters, A) ->
 		error:undef -> init(Kernel, "", A)
 	end.
 
-default(Kernel, ExtraParameters, _A) ->
-	Kernel ! {ok, {ehtml, [{section, [], ["hello default" ++ "default"]}]}},
+default(Kernel, ExtraParameters, A) ->
+	CD = lib_cookie:getcookiedata(A),
+	case CD#cookiedata.permission of
+		anonymous -> Kernel ! {ok, {ehtml, [{section, [], ["hello default" ++ "default"]}]}};
+		_ -> Kernel ! {ok, view_loggedin:out(A, [{name, CD#cookiedata.first_name ++ " " ++ CD#cookiedata.last_name}])}
+	end,
 	ok.

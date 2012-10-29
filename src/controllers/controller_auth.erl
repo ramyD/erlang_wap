@@ -37,35 +37,36 @@ register(Kernel, _ExtraParameters, A) ->
 	ok.
 
 authenticate(Kernel, _ExtraParameters, A) ->
-  %% verify login credentials check out. If any of this fails, the app crashes
-  [{"user", Username}, {"pass", Password}, _] = yaws_api:parse_post(A),
-  BPassword = list_to_binary(Password),
-  BUsername = list_to_binary(Username),
-  Rows = object_people:get_passwords(),
-  [UserRow | _] = [RowData || {obj, RowData} <- Rows, lists:keyfind(BUsername, 2, RowData) == {"key", BUsername}],
-  [{"id", BUserId}, {"key", BUsername}, {"value", BPassword}] = UserRow,
-  UserId = binary_to_list(BUserId),
+	%% verify login credentials check out. If any of this fails, the app crashes
+	[{"email", Email}, {"pass", Password}, _] = yaws_api:parse_post(A),
+	BPassword = list_to_binary(Password),
+	BEmail = list_to_binary(Email),
+	Row = object_people:get_password_by_email(Email),
+	%% todo: encrypt and decrypt here
+	[{obj, [{"id", BUserId}, {"key", BEmail}, {"value", BPassword}]}] = Row,
+	UserId = binary_to_list(BUserId),
 
-  %% get user document if login is successful
-  UserDocument = object_people:get_user(UserId),
-  {_, Permission} = lists:keyfind("permissions", 1, UserDocument),
-  {_, FirstName} = lists:keyfind("first_name", 1, UserDocument),
-  {_, LastName} = lists:keyfind("last_name", 1, UserDocument),
-  {_, Email} = lists:keyfind("email", 1, UserDocument),
+	%% get user document if login is successful
+	UserDocument = object_people:get_user_by_id(UserId),
+	%%{_, Permission} = lists:keyfind("permissions", 1, UserDocument),
+	Permission = <<"Officer">>,
+	{_, FirstName} = lists:keyfind("FirstName", 1, UserDocument),
+	{_, LastName} = lists:keyfind("Name", 1, UserDocument),
+	{_, BEmail} = lists:keyfind("Email", 1, UserDocument),
 
-  %% create a cookie
-  {_, Timestamp, _} = now(),
-  CD = #cookiedata{user_id = UserId,
-                   permission = binary_to_atom(Permission, utf8),
-                   first_name = binary_to_list(FirstName),
-                   last_name = binary_to_list(LastName),
-                   email = binary_to_list(Email),
-                   lastlogin = Timestamp},
+	%% create a cookie
+	{_, Timestamp, _} = now(),
+	CD = #cookiedata{user_id = UserId,
+					 permission = binary_to_atom(Permission, utf8),
+					 first_name = binary_to_list(FirstName),
+					 last_name = binary_to_list(LastName),
+					 email = Email,
+					 lastlogin = Timestamp},
 
-  %% we should get and store the users's permission inside the CookieData
-  Cookie = yaws_api:new_cookie_session(CD),
-  CookieObject = yaws_api:setcookie("YAWSSESSID", Cookie, "/"),
+	%% we should get and store the users's permission inside the CookieData
+	Cookie = yaws_api:new_cookie_session(CD),
+	CookieObject = yaws_api:setcookie("YAWSSESSID", Cookie, "/"),
   
   %% output a successful message
-	Kernel ! {ok, [view_loggedin:out(A, [{name, Username}]), CookieObject]},
+	Kernel ! {ok, [view_loggedin:out(A, [{name, FirstName}]), CookieObject]},
 	ok.
