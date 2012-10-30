@@ -13,7 +13,7 @@ out(A, Parameters) ->
 		{html, [], [
 			{head, [], [
 				{title, [], ["user login"]},
-				{script, [{src, "/priv/js/zepto.min.js"}]}
+				{script, [{src, "/priv/js/zepto/zepto.min.js"}]}
 			]},
 			{body, [], [
 				{p, [], ["Login to MOAT framework"]},

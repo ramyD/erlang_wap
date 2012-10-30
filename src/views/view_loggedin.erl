@@ -14,7 +14,7 @@ out(_A, Parameters) ->
 		{html, [], [
 			{head, [], [
 				{title, [], ["You are logged in"]},
-				{script, [{src, "/priv/js/zepto.min.js"}]}
+				{script, [{src, "/priv/js/zepto/zepto.min.js"}]}
 			]},
 			{body, [], [
 				{h1, [], ["Login successful"]},

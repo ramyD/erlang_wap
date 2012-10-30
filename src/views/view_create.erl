@@ -17,24 +17,66 @@ out(_A, Parameters) ->
 			{head, [], [
 				{meta, [{charset, "UTF-8"}]},
 				{title, [], ["Create"]},
+				{meta, [{name, "viewport"}, {content, "width=device-width, initial-scale=1.0"}]},
+				{meta, [{name, "description"}, {content, ""}]},
+
+				%% bootstrap
+				{link, [{rel, "stylesheet"}, {href, "/priv/css/bootstrap/bootstrap.min.css"}]},
 
 				%% kendo ui css
 				{link, [{rel, "stylesheet"}, {href, "/priv/css/kendo/kendo.common.min.css"}]},
 				{link, [{rel, "stylesheet"}, {href, "/priv/css/kendo/kendo.default.min.css"}]},
 
-				%% kendo ui js
-				{script, [{src, "/priv/js/kendo/jquery.min.js"}]},
+				%% IE6-8 support of html5
+				"<!--[if lt IE 9]>",
+				{script, [{src, "http://html5shim.googlecode.com/svn/trunk/html5.js"}]},
+				"<![endif]-->"
+			]},
+			{body, [{style, "padding-top:60px"}], [
+				{'div', [{class, "navbar navbar-inverse navbar-fixed-top"}], [
+					{'div', [{class, "navbar-inner"}], [
+						{'div', [{class, "container"}], [
+							{a, [{class, "btn btn-navbar"}, {'data-toggle', "collapse"}, {'data-target', ".nav-collapse"}], [
+								{span, [{class, "icon-bar"}], []},
+								{span, [{class, "icon-bar"}], []},
+								{span, [{class, "icon-bar"}], []}
+							]},
+							{a, [{class, "brand"}, {href, "#"}], [
+								"Project name"
+							]},
+							{'div', [{class, "nav-collapse collapse"}], [
+								{ul, [{class, "nav"}], [
+									{li, [{class, "active"}], [{a, [{href, "#"}], [ "Home" ] }] },
+									{li, [], [{a, [{href, "#about"}], [ "About" ] }] },
+									{li, [], [{a, [{href, "#contact"}], [ "Contact" ] }] }
+								]}
+							]}
+						]}
+					]}
+				]},
+
+				{'div', [{class, "container"}], [
+					{h1, [], ["Create an entry into the database"]},
+					{'div', [{class, "row"}], [
+						{'div', [{class, "span4"}], [
+							{'div', [{class, "k-content"}], [
+								%% {'input id="templates"'}
+								{input, [{id, templates}]}
+							]}
+						]},
+						{'div', [{class, "span6"}], [
+							{'div', [{id, "template-form"}], []}
+						]}
+					]}
+				]},
+
+				%% query bootstrap kendo js
+				{script, [{src, "/priv/js/jquery/jquery.min.js"}]},
+				{script, [{src, "/priv/js/bootstrap/bootstrap.min.js"}]},
 				{script, [{src, "/priv/js/kendo/kendo.web.min.js"}]},
 
 				%% page js
 				{script, [{src, "/priv/js/" ++ atom_to_list(?MODULE) ++ "/main.js"}]}
-			]},
-			{body, [], [
-				{h1, [], ["Create an entry into the database"]},
-				{'div', [{class, "k-content"}],
-					%% {'input id="templates"'}
-					{input, [{id, templates}]}
-				}
 			]}
 		]}
 	]}.

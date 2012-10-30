@@ -41,3 +41,9 @@ get_template_names(Kernel, _ExtraParameters, A) ->
 	{ok, TemplateOutput} = json:encode(TemplateNames),
 	Kernel ! {ok, {content, "application/json", TemplateOutput}},
 	ok.
+
+get_template(Kernel, ExtraParameters, A) ->
+	Query = yaws_api:parse_query(A),
+	{template, Template} = lists:keyfind(template, 1, Query),
+	TemplateDescription = object_templates:get_template(Template),
+

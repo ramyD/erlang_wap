@@ -30,7 +30,7 @@ login(Kernel, _ExtraParameters, A) ->
 
 register(Kernel, _ExtraParameters, A) ->
   case A#arg.req#http_request.method of
-	  'GET' -> Kernel ! {ok, view_register:out(A)};
+	'GET' -> Kernel ! {ok, view_register:out(A)};
     'POST' -> A,
               Kernel ! {ok, {}}
   end,
