@@ -1,0 +1,5 @@
+# Log files
+log/*
+
+# Ebin folder
+ebin/*
