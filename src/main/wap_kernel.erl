@@ -15,7 +15,8 @@ start(normal, []) ->
 init() -> 
 	inets:start(),
 	code:add_pathz("/usr/lib/yaws/ebin/"),
-  register(chat, spawn(wap_chat, init, [])),
+	register(chat, spawn(wap_chat, init, [])),
+	config:init(),
 	Docroot = "/var/yaws",
 	Id = "my_server",
 	ServerConfiguration = [{servername, "localhost"}, {listen, {127,0,0,1}}, {port, 8000}, {appmods, [{"/", wap_kernel}]}],
@@ -33,8 +34,10 @@ out(A) ->
 	receive
 		{ok, Response} ->
 			Response;
+
 		{'EXIT', _Pid, Reason} ->
 			{ehtml, [{section, [], ["routing dispatch failed, " ++ erlang:atom_to_list(Reason)]}]}
+
 	after 10000 ->
 		{ehtml, [{section, [], ["request has taken too long"]}]}
 	end.

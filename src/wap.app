@@ -7,6 +7,9 @@
 			wap_chat,
 			router,
 
+			%% Main
+			config,
+
 			%% Controllers:
 			controller_auth,
 			controller_chat,
