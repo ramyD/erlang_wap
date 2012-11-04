@@ -1,9 +1,10 @@
-erlang-wap
+erlang\_wap
 ==========
 
-simple erlang web framework
-uses couch db
+An initially simple web framework, now it might be something else...
 
-compile: erl -make Emakefile
+Compile:
+	erl -make
 
-running the app: erl +K true and: application:start(wap).
+Running the app:
+	erl +K true and: application:start(wap).
