@@ -7,7 +7,7 @@
 
 pass_query(Database, Parameters) ->
 	Url = "http://localhost:5984/" ++ Database ++ "/" ++ Parameters,
-	{ok, {{"HTTP/1.1",200,"OK"}, _Header, DbRawRows}} = httpc:request(get, {Url,[{"Content-Type", rfc4627:mime_type()}]}, [], [{full_result, true}]),
+	{ok, {{"HTTP/1.1",200,"OK"}, _Header, DbRawRows}} = httpc:request(get, {Url,[{"Content-Type", "application/json"}]}, [], [{full_result, true}]),
 	DbRawRows.
 
 moat_templates_documents(View) ->
