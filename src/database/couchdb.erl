@@ -11,21 +11,18 @@ pass_query(Database, Parameters) ->
 	DbRawRows.
 
 moat_templates_documents(View) ->
-	Documents = "_design/documents/_view/",
-	DbRawRows = couchdb:pass_query("moat_templates", Documents ++ View),
-	DbRowObjects = rfc4627:decode_noauto(DbRawRows),
-	{ok, {obj,[{"total_rows", _Rownum}, {"offset",0}, {"rows", Rows}]}, []} = DbRowObjects,
+	DbRawRows = couchdb:pass_query("moat_templates", View),
+	DbRowObjects = json:decode(DbRawRows),
+	{ok, {[{<<"total_rows">>, _Rownum}, {<<"offset">>,0}, {<<"rows">>, Rows}]}} = DbRowObjects,
 	Rows.
 
 moat_templates(Parameters) ->
 	DbRawRows = couchdb:pass_query("moat_templates", Parameters),
-	DbRowObjects = rfc4627:decode_noauto(DbRawRows),
-	{ok, {obj,[{"total_rows", _Rownum}, {"offset",0}, {"rows", Rows}]}, []} = DbRowObjects,
-	Rows.
+	{ok, {Row}} = json:decode(DbRawRows),
+	Row.
 
 moat_attributes_documents(View) ->
-	Documents = "_design/documents/_view/",
-	DbRawRows = couchdb:pass_query("moat_attributes", Documents ++ View),
-	DbRowObjects = rfc4627:decode_noauto(DbRawRows),
-	{ok, {obj,[{"total_rows", _Rownum}, {"offset",0}, {"rows", Rows}]}, []} = DbRowObjects,
+	DbRawRows = couchdb:pass_query("moat_attributes", View),
+	DbRowObjects = json:decode(DbRawRows),
+	{ok, {[{<<"total_rows">>, _Rownum}, {<<"offset">>,0}, {<<"rows">>, Rows}]}} = DbRowObjects,
 	Rows.

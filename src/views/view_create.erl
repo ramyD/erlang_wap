@@ -29,7 +29,7 @@ out(_A, Parameters) ->
 
 				%% IE6-8 support of html5
 				"<!--[if lt IE 9]>",
-				{script, [{src, "http://html5shim.googlecode.com/svn/trunk/html5.js"}]},
+					{script, [{src, "http://html5shim.googlecode.com/svn/trunk/html5.js"}]},
 				"<![endif]-->"
 			]},
 			{body, [{style, "padding-top:60px"}], [
@@ -65,7 +65,9 @@ out(_A, Parameters) ->
 							]}
 						]},
 						{'div', [{class, "span6"}], [
-							{'div', [{id, "template-form"}], []}
+							{'form', [{class, "form-horizontal"}], [
+								{'fieldset', [{id, "template-form"}], []}
+							]}
 						]}
 					]}
 				]},

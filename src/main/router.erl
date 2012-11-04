@@ -20,6 +20,7 @@ route(Kernel, Fullroute, A) ->
 		0 ->
 			Route = Fullroute,
 			Parameters = "";
+
 		_ ->
 			Route = string:substr(Fullroute, 1, string:chr(Fullroute, $/)-1),
 			Parameters = string:substr(Fullroute, string:chr(Fullroute, $/)+1)
