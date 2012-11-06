@@ -43,16 +43,16 @@ authenticate(Kernel, _ExtraParameters, A) ->
 	BEmail = list_to_binary(Email),
 	Row = object_people:get_password_by_email(Email),
 	%% todo: encrypt and decrypt here
-	[{obj, [{"id", BUserId}, {"key", BEmail}, {"value", BPassword}]}] = Row,
+	[{[{<<"id">>, BUserId}, {<<"key">>, BEmail}, {<<"value">>, BPassword}]}] = Row,
 	UserId = binary_to_list(BUserId),
 
 	%% get user document if login is successful
 	UserDocument = object_people:get_user_by_id(UserId),
 	%%{_, Permission} = lists:keyfind("permissions", 1, UserDocument),
 	Permission = <<"Officer">>,
-	{_, FirstName} = lists:keyfind("FirstName", 1, UserDocument),
-	{_, LastName} = lists:keyfind("Name", 1, UserDocument),
-	{_, BEmail} = lists:keyfind("Email", 1, UserDocument),
+	{_, FirstName} = lists:keyfind(<<"FirstName">>, 1, UserDocument),
+	{_, LastName} = lists:keyfind(<<"Name">>, 1, UserDocument),
+	{_, BEmail} = lists:keyfind(<<"Email">>, 1, UserDocument),
 
 	%% create a cookie
 	{_, Timestamp, _} = now(),

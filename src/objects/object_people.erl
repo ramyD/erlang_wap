@@ -15,13 +15,13 @@ get_password_by_email(Email) ->
 	Url = "http://localhost:5984/moat_people/_design/authenticate/_view/authentication?key=" ++ yaws_api:url_encode("\"" ++ Email ++ "\""),
 	{ok, {{"HTTP/1.1",200,"OK"}, _Header, DbRawRows}} = httpc:request(get, {Url, [{"Content-Type", "application/json"}]}, [], [{full_result, true}]),
 	DbRowObjects = json:decode(DbRawRows),
-	{ok, {obj,[{"total_rows", 1}, {"offset", _}, {"rows", Row}]}, []} = DbRowObjects,
+	{ok, {[{<<"total_rows">>, 1}, {<<"offset">>, _}, {<<"rows">>, Row}]}} = DbRowObjects,
 	Row.
 
 get_user_by_id(UserId) ->
   {ok, {{"HTTP/1.1",200,"OK"}, _, DbRawRows}} = httpc:request(get, {"http://localhost:5984/moat_people/" ++ UserId, [{"Content-Type", "application/json"}]}, [], [{full_result, true}]),
   DbRowObjects = json:decode(DbRawRows),
-  {ok, {obj, Row}, []} = DbRowObjects,
+  {ok, {Row}} = DbRowObjects,
   Row.
 
 add() -> ok.
