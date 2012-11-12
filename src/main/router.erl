@@ -1,43 +1,45 @@
 -module(router).
--author("ramy.daghstani@gmail.com").
--export([route/3]).
+-export([prep_route/3]).
 
 -include("/usr/lib/yaws/include/yaws_api.hrl").
--compile(export_all).
 
 % routing module
 
-init() -> 
-	true.
+prep_route(Kernel, undefined, A) ->
+	prep_route(Kernel, "/default", A);
 
-route(Kernel, "", A) ->
-	Route = "default",
-	Parameters = "",
-	executecontroller(Kernel, Route, Parameters, A);
+prep_route(Kernel, Fullroute, A) ->
+	[ _ | Route ] = filename:split(Fullroute),
+	RequestType = A#arg.req#http_request.method,
+	route(Kernel, {RequestType, Route}, A).
 
-route(Kernel, Fullroute, A) ->
-	case string:chr(Fullroute, $/) of 
-		0 ->
-			Route = Fullroute,
-			Parameters = "";
+route(Kernel, RouteInfo, A) ->
+	case RouteInfo of
+		{ _, []} ->
+			apply(moat_controller_default, default, [Kernel, [], A]);
+			
+		{'GET', ["css" | Path]} ->
+			apply(moat_controller_priv, css, [Kernel, Path, A]);
+
+		{'GET', ["js" | Path]} ->
+			apply(moat_controller_priv, js, [Kernel, Path, A]);
+
+		{'GET', ["image" | Path]} ->
+			apply(moat_controller_priv, image, [Kernel, Path, A]);
+
+		{'GET', ["login"]} ->
+			apply(moat_controller_auth, login, [Kernel, [], A]);
+
+		{'POST', ["login"]} ->
+			apply(moat_controller_auth, authenticate, [Kernel, [], A]);
+
+		{ _, [Controller]} ->
+			apply(list_to_atom("moat_controller_" ++ Controller), default, [Kernel, [], A]);
+
+		{ _, [Controller, Function]} ->
+			apply(list_to_atom("moat_controller_" ++ Controller), list_to_atom(Function), [Kernel, [], A]);
 
 		_ ->
-			Route = string:substr(Fullroute, 1, string:chr(Fullroute, $/)-1),
-			Parameters = string:substr(Fullroute, string:chr(Fullroute, $/)+1)
+			Kernel ! {ok, moat_view_notfound:out(A)}
 	end,
-	executecontroller(Kernel, Route, Parameters, A).
-
-executecontroller(Kernel, Route, Parameters, A) ->
-	try (apply(list_to_atom("controller_" ++ Route), init, [Kernel, Parameters,  A])) of
-		ok -> ok
-	catch
-		error:undef -> pagenotfound(Kernel, "",  A)
-	end.
-
-pagenotfound(Kernel, _Parameters, A) ->
-	Kernel ! {ok, {ehtml, {html, [], [
-				{h2, [], "404"}, 
-				{p, [], A#arg.appmoddata},
-				{p, [], "page not found"}
-			]}
-	}}, ok.
+	ok.

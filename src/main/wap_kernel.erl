@@ -1,9 +1,7 @@
 -module(wap_kernel).
--author("ramy.daghstani@gmail.com").
--export([init/0, start/2]).
+-export([start/2, stop/0, out/1]).
 
 -include("/usr/lib/yaws/include/yaws_api.hrl").
--compile(export_all).
 
 % web app module
 
@@ -30,7 +28,7 @@ stop() ->
 
 out(A) ->
 	process_flag(trap_exit, true),
-	spawn_link(router, route, [self(), A#arg.appmoddata, A]),
+	spawn_link(router, prep_route, [self(), A#arg.pathinfo, A]),
 	receive
 		{ok, Response} ->
 			Response;
@@ -39,5 +37,5 @@ out(A) ->
 			{ehtml, [{section, [], ["routing dispatch failed, " ++ erlang:atom_to_list(Reason)]}]}
 
 	after 10000 ->
-		{ehtml, [{section, [], ["request has taken too long"]}]}
+		{ehtml, [{section, [], ["request has taken too long, internal timeout"]}]}
 	end.
