@@ -7,7 +7,7 @@
 out(A) -> 
  out(A, []).
 
-out(A, Parameters) -> 
+out(A, _Parameters) -> 
 	{ehtml, {html, [], [
 					{h2, [], "404"}, 
 					{p, [], A#arg.appmoddata},

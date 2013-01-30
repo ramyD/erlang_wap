@@ -15,10 +15,10 @@ out(_A, Parameters) ->
 				{input, [{type, "number"}, {name, Parameter}, {id, Parameter}, {required, "required"}], []},
 				{script, [{type, "text/javascript"}], [
 					"var input_id = '#" ++ Parameter ++ "';
-					 (function() { $(input_id).kendoComboBox( { index: 0,
-																placeholder: 'Choose Roles',
-																dataTextField: 'attribute',
-																dataValuefield: 'id',
+					 (function() { $(input_id).kendoDropDownList( { index: 0,
+																placeholder: 'Choose Rank',
+																dataTextField: 'rank',
+																dataValuefield: 'order',
 																filter: 'contains',
 																dataSource:{type: 'json',
 																			serverFiltering: false,

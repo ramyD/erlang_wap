@@ -34,6 +34,5 @@ moat_attributes_documents(View) ->
 
 moat_data(Parameters) ->
 	DbRawRows = couchdb:pass_query("moat_data", Parameters),
-	io:format("request data: ~p~n", [DbRawRows]),
 	{ok, {Row}} = json:decode(DbRawRows),
 	Row.
