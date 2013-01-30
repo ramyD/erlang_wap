@@ -40,7 +40,7 @@ out(_A, Parameters) ->
 								{span, [{class, "icon-bar"}], []}
 							]},
 							{a, [{class, "brand"}, {href, "#"}], [
-								"Project name"
+								"Moat Project"
 							]},
 							{'div', [{class, "nav-collapse collapse"}], [
 								{ul, [{class, "nav"}], [

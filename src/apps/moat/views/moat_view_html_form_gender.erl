@@ -12,9 +12,13 @@ out(_A, Parameters) ->
 		{'div', [{class, "control-group"}], [
 			{label, [{for, Parameter}, {class, "control-label"}], [ ParameterName ]},
 			{'div', [{class, "controls"}], [
-				{input, [{type, "radio"}, {name, Parameter}, {required, "required"}, {value, "male"}], []},
-				{input, [{type, "radio"}, {name, Parameter}, {required, "required"}, {value, "female"}], []},
-				{input, [{type, "radio"}, {name, Parameter}, {required, "required"}, {value, "other"}], []}
+				{input, [{id, Parameter}, {type, "text"}, {name, Parameter}, {required, "required"}]},
+				{script, [{type, "text/javascript"}], [
+					"(function() { $('#" ++ Parameter ++ "').kendoAutoComplete({dataSource: ['Male', 'Female'],
+																				filter: 'startswith',
+																				placeholder: 'Enter Gender',
+																				separator: ''}); })();"
+				]}
 			]}
 		]}
 	]}.

@@ -25,10 +25,9 @@ function constructForm() {
 		for (var parameter in template) {
 			// skip if the parameter is a hidden type
 			if ( parameter[0] == '_' ) continue;
-			formFields[parameter] = (template[parameter]);
+			formFields[parameter] = ('form_' + template[parameter]);
 		}
 
-		templateForm.load("/html/generate_form", formFields);
-		
+		templateForm.load("/html/generate", formFields);
 	});
 }
