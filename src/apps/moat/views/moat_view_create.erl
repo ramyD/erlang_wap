@@ -25,6 +25,12 @@ out(_A, Parameters) ->
 				{link, [{rel, "stylesheet"}, {href, "/css/kendo/kendo.common.min.css"}]},
 				{link, [{rel, "stylesheet"}, {href, "/css/kendo/kendo.default.min.css"}]},
 
+				%% compatibility between style changes for kendo and bootstrap
+				{link, [{rel, "stylesheet"}, {href, "/css/general/compatibility.css"}]},
+
+				%% general style sheet for this view
+				{link, [{rel, "stylesheet"}, {href, "/css/" ++ atom_to_list(?MODULE)  ++ "/main.css"}]},
+
 				%% IE6-8 support of html5
 				"<!--[if lt IE 9]>",
 					{script, [{src, "http://html5shim.googlecode.com/svn/trunk/html5.js"}]},
@@ -59,12 +65,15 @@ out(_A, Parameters) ->
 						{'div', [{class, "span4"}], [
 							{'div', [{class, "k-content"}], [
 								%% {'input id="templates"'}
-								{input, [{id, templates}]}
-							]}
+								{'fieldset', [{form, "template-form"}], [
+									{input, [{id, templates}]}
+								]}
+							]},
+							{button, [{type, "submit"}, {form, "template-form"}, {formaction, "/create/create_entry"}, {formmethod, "post"}], ["Submit"]}
 						]},
 						{'div', [{class, "span6"}], [
-							{'form', [{class, "form-horizontal"}], [
-								{'fieldset', [{id, "template-form"}], []}
+							{'form', [{class, "form-horizontal"}, {id, "template-form"}], [
+								{'fieldset', [{form, "template-form"}], []}
 							]}
 						]}
 					]}
@@ -74,6 +83,7 @@ out(_A, Parameters) ->
 				{script, [{src, "/js/jquery/jquery.min.js"}]},
 				{script, [{src, "/js/bootstrap/bootstrap.min.js"}]},
 				{script, [{src, "/js/kendo/kendo.web.min.js"}]},
+				{script, [{src, "/js/modernizr/modernizr.js"}]},
 
 				%% page js
 				{script, [{src, "/js/" ++ atom_to_list(?MODULE) ++ "/main.js"}]}

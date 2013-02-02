@@ -1,0 +1,11 @@
+.k-autocomplete,
+.k-combobox,
+.k-datepicker,
+.k-timepicker,
+.k-datetimepicker,
+.k-numerictextbox,
+.k-dropdown,
+.k-selectbox,
+.k-textbox {
+    width: 15.6em;
+}

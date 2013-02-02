@@ -12,7 +12,7 @@ out(_A, Parameters) ->
 		{'div', [{class, "control-group"}], [
 			{label, [{for, Parameter}, {class, "control-label"}], [ ParameterName ]},
 			{'div', [{class, "controls"}], [
-				{input, [{type, "email"}, {name, Parameter}, {id, Parameter}, {required, "required"}], []}
+				{input, [{type, "email"}, {name, Parameter}, {id, Parameter}], []}
 			]}
 		]}
 	]}.

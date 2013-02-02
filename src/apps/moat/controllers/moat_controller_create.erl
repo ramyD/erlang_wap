@@ -1,5 +1,6 @@
 -module(moat_controller_create).
 -export([default/3,
+		 create_entry/3,
 		 get_template_names/3,
 		 get_template_parameters/3,
 		 get_attribute_names/3,
@@ -20,6 +21,13 @@ default(Kernel, _ExtraParameters, A) ->
 	Attributes = moat_object_attributes:get_attributes(),
 	Kernel ! {ok, [moat_view_create:out(A, [{templates, Templates},
 										    {attributes, Attributes}])]},
+	ok.
+
+create_entry(Kernel, _ExtraParameters, A) ->
+	Query = yaws_api:parse_query(A),
+	Post = yaws_api:parse_post(A),
+	io:format("Query: ~p~n, Post: ~p~n", [Query, Post]),
+	Kernel ! {ok, {content, "application/json", <<"{}">>}},
 	ok.
 
 get_template_names(Kernel, _ExtraParameters, _A) ->

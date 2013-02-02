@@ -14,10 +14,10 @@ out(_A, Parameters) ->
 			{label, [{for, Parameter}, {class, "control-label"}], [ ParameterName ]},
 			{'div', [{class, "controls"}], [
 				{input, [{name, Parameter}, {id, Parameter}, {required, "required"}], []},
-				{button, [{id, Parameter ++ "_add"}, {form, ""}, {onclick, "add_attribute()"}], ["add"]},
+				{button, [{class, Parameter ++ "_button"}, {form, ""}, {onclick, "add_attribute()"}], ["add"]},
 				{script, [{type, "text/javascript"}], [
 					"var input_id = '#" ++ Parameter ++ "';
-					 (function() { $(input_id).kendoComboBox( { index: 0,
+					 (function() { $(input_id).kendoDropDownList( { index: 0,
 																placeholder: 'Choose Roles',
 																dataTextField: 'attribute',
 																dataValuefield: 'id',
@@ -29,7 +29,7 @@ out(_A, Parameters) ->
 																			transport: { read: '/create/get_attribute_names' }}
 																}); })();
 					 function add_attribute() {
-						var attribute_id = $(input_id).data('kendoComboBox').text();
+						var attribute_id = $(input_id).data('kendoDropDownList').text();
 						if ($(input_id + '-forms div#' + attribute_id).length == 0) {
 							$.getJSON('/create/get_attribute_parameters', {attribute_id: attribute_id}, function(attribute) {
 								// store all the required form field types
@@ -41,14 +41,26 @@ out(_A, Parameters) ->
 									formFields[parameter] = ('attribute_' + attribute[parameter]);
 								}
 
-								$(input_id + '-forms').append('<div id=' + attribute_id + '></div>');
+								$(input_id + '-forms').append('<div id=\"' + attribute_id + '\" class=\"attribute\"></div>');
 
 								// declare dom elements to manipulate
 								var attributeForm = $(input_id + '-forms div#' + attribute_id);
 
-								attributeForm.load('/html/generate', formFields);
+								// declare the html to prepend after the data is loaded
+								var prependHtml = '<h3>' + attribute_id + 
+								                   '<button onclick=\"remove_attribute()\" form=\"\" class=\"" ++ Parameter ++ "_button\">remove</button></h3>'
+
+								attributeForm.load('/html/generate',
+												   formFields,
+												   function () {
+												       attributeForm.prepend(prependHtml);
+												   });
 							});
 						}
+					 }
+
+					 function remove_attribute ( attribute_id ) {
+						console.log('removing: ' + attribute_id);
 					 }
 					"
 				]},
